@@ -1,0 +1,476 @@
+\hypertarget{classConfigurationData}{}\section{Configuration\+Data Class Reference}
+\label{classConfigurationData}\index{Configuration\+Data@{Configuration\+Data}}
+
+
+{\ttfamily \#include $<$Configuration\+Data.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabc}{Data\+Source} \{ \hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabca9e0c7b9239487cfb4752209277ac79aa}{F\+I\+LE}, 
+\hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabca30f2137384653ca12f00f3bc62a807ea}{DB}, 
+\hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabca38caa02da39a1a3ed2b30b02f3153a8f}{E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source}
+ \}
+\item 
+typedef map$<$ std\+::string, std\+::vector$<$ \hyperlink{structDynamicConfigItemDataStruct}{Dynamic\+Config\+Item\+Data\+Struct} $>$ $>$ \hyperlink{classConfigurationData_a88b45bf304a35e4e78cfce6688087cce}{configuration\+Data\+\_\+map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConfigurationData_a8cb8af69711def4253a59956e7b33c15}{Configuration\+Data} ()
+\item 
+virtual \hyperlink{classConfigurationData_a4f90f14791e6c4dc6836dffab3ae49ae}{$\sim$\+Configuration\+Data} ()
+\item 
+\hyperlink{ConfigurationData_8h_a4e9a8de26cf7d053d8e1db76220bdc33}{Dyn\+Cfg\+Intf\+Return\+Codes} \hyperlink{classConfigurationData_a85ef47317952a9369b474c8df2525322}{Get\+Configuration\+Data} ()
+\item 
+\hyperlink{ConfigurationData_8h_a4e9a8de26cf7d053d8e1db76220bdc33}{Dyn\+Cfg\+Intf\+Return\+Codes} \hyperlink{classConfigurationData_ae3be498bfc92a2162247810dfb37f6ec}{Get\+Configuration\+Data\+From\+File} (const std\+::string file\+Name, bool is\+Success)
+\item 
+\hyperlink{ConfigurationData_8h_a4e9a8de26cf7d053d8e1db76220bdc33}{Dyn\+Cfg\+Intf\+Return\+Codes} \hyperlink{classConfigurationData_aa5fd34a8fabbe045ec9b607a94fc021c}{Get\+Configuration\+Data\+From\+Db} (string svcname, bool is\+Success)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classConfigurationData_a5960620b5e6e32d288157bb35860aa4d}{Get\+Configuration\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, T t\+Def\+Item\+Value)
+\item 
+bool \hyperlink{classConfigurationData_a37a40d143e56aa3577cace34049091df}{get\+Group\+Name} (const std\+::string str\+Group\+\_\+c, vector$<$ \hyperlink{structDynamicConfigItemDataStruct}{Dynamic\+Config\+Item\+Data\+Struct} $>$ \&vt\+\_\+config\+Data)
+\item 
+bool \hyperlink{classConfigurationData_a4d298695a36f8537adff911698e8da6a}{get\+Bool\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, bool b\+Def\+Item\+Value=false)
+\item 
+int \hyperlink{classConfigurationData_a54bb3e76dfb9e720bbcb41a277e1aee1}{get\+Int\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, int n\+Def\+Item\+Value=0)
+\item 
+long \hyperlink{classConfigurationData_ace8acd6f1471ffc98cc2df5e526d7e3a}{get\+Long\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, long l\+Def\+Item\+Value=0)
+\item 
+double \hyperlink{classConfigurationData_aa3255f642441d984e8963896a22eeb04}{get\+Double\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, double d\+Def\+Item\+Value=0.\+0)
+\item 
+char \hyperlink{classConfigurationData_a81813d9b987a56d31b1d49db4f308746}{get\+Char\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, char def\+Item\+Value= \textquotesingle{}\textbackslash{}0\textquotesingle{})
+\item 
+string \hyperlink{classConfigurationData_a59866f345224cbf203c835e0693771b9}{get\+String\+Type\+Item\+Value} (string str\+Group\+Name, string str\+Item\+Name, string str\+Def\+Item\+Value=\char`\"{}\char`\"{})
+\item 
+std\+::vector$<$ std\+::string $>$ \& \hyperlink{classConfigurationData_af68323f3fea60118d8150ad469bd2a0a}{get\+Item\+Value\+String\+List} (string str\+Group\+Name, string str\+Item\+Name)
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \hyperlink{classConfigurationData_acab5cb404d738f84daed25f604f692e4}{get\+Name\+Value\+List} (string str\+Group\+Name)
+\item 
+bool \hyperlink{classConfigurationData_a93380d92256f8798651a07fce30f7d83}{print\+Configuration\+Data} ()
+\item 
+bool \hyperlink{classConfigurationData_a7c04864007d1a78c1881b1ab83d78698}{get\+Item\+Name\+Found} ()
+\item 
+\hyperlink{classConfigurationData_a88b45bf304a35e4e78cfce6688087cce}{configuration\+Data\+\_\+map\+\_\+t} \hyperlink{classConfigurationData_a7a2e42c0440473858c382c39e3d66f3a}{get\+Configuration\+Data} ()
+\item 
+\hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabc}{Data\+Source} \hyperlink{classConfigurationData_a10b79d03076c79b4e16aeed78f50a427}{Get\+Data\+Source} ()
+\item 
+void \hyperlink{classConfigurationData_ac5288ab51744fc8697a24d2663136916}{Set\+Data\+Source} (\hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabc}{Data\+Source} source)
+\item 
+const std\+::string \& \hyperlink{classConfigurationData_abc7059c19e27c48a05ef4184c73a26bc}{Get\+File\+Name} ()
+\item 
+void \hyperlink{classConfigurationData_a54f43e41906262c4a336b370a4f1726c}{Set\+File\+Name} (string str\+File\+Name)
+\item 
+const std\+::string \& \hyperlink{classConfigurationData_a1deecfa52d87b2cfedf59390813bd2b3}{Get\+Service\+Name} ()
+\item 
+void \hyperlink{classConfigurationData_aeaa0566bed9b1c41ae77a363a811e1ce}{Set\+Service\+Name} (string str\+Svc\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classConfigurationData_aefb528ceef393a3d4a016ab52fca5c0b}{m\+\_\+sz\+Error\+Message} \mbox{[}512\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classConfigurationData_a88b45bf304a35e4e78cfce6688087cce}{configuration\+Data\+\_\+map\+\_\+t} \hyperlink{classConfigurationData_a7068df8bceb0fd7e24abde430532eeca}{configuration\+Data\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConfigurationData_a6b159be92b02274088a4de34584eeabc}{Data\+Source} \hyperlink{classConfigurationData_a76fde55e5e58cd5726449bee19c378dd}{m\+\_\+data\+Source}
+\item 
+string \hyperlink{classConfigurationData_aae2da98258156ab8a7b4884694d5cea7}{m\+\_\+str\+Service\+Name}
+\item 
+string \hyperlink{classConfigurationData_a3c2246db7a0a2cfa91081e91a98625df}{m\+\_\+str\+File\+Name}
+\item 
+bool \hyperlink{classConfigurationData_a358d8d3d441e31872a9f52a5dd0a8943}{m\+\_\+b\+Item\+Found\+Flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file Configuration\+Data.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Configuration\+Data@{Configuration\+Data}!configuration\+Data\+\_\+map\+\_\+t@{configuration\+Data\+\_\+map\+\_\+t}}
+\index{configuration\+Data\+\_\+map\+\_\+t@{configuration\+Data\+\_\+map\+\_\+t}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{configuration\+Data\+\_\+map\+\_\+t}{configurationData_map_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$std\+::string, std\+::vector$<${\bf Dynamic\+Config\+Item\+Data\+Struct}$>$ $>$ {\bf Configuration\+Data\+::configuration\+Data\+\_\+map\+\_\+t}}\hypertarget{classConfigurationData_a88b45bf304a35e4e78cfce6688087cce}{}\label{classConfigurationData_a88b45bf304a35e4e78cfce6688087cce}
+
+
+Definition at line 40 of file Configuration\+Data.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{Configuration\+Data@{Configuration\+Data}!Data\+Source@{Data\+Source}}
+\index{Data\+Source@{Data\+Source}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Data\+Source}{DataSource}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Configuration\+Data\+::\+Data\+Source}}\hypertarget{classConfigurationData_a6b159be92b02274088a4de34584eeabc}{}\label{classConfigurationData_a6b159be92b02274088a4de34584eeabc}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\+I\+LE@{F\+I\+LE}!Configuration\+Data@{Configuration\+Data}}\index{Configuration\+Data@{Configuration\+Data}!F\+I\+LE@{F\+I\+LE}}\item[{\em 
+F\+I\+LE\hypertarget{classConfigurationData_a6b159be92b02274088a4de34584eeabca9e0c7b9239487cfb4752209277ac79aa}{}\label{classConfigurationData_a6b159be92b02274088a4de34584eeabca9e0c7b9239487cfb4752209277ac79aa}
+}]\index{DB@{DB}!Configuration\+Data@{Configuration\+Data}}\index{Configuration\+Data@{Configuration\+Data}!DB@{DB}}\item[{\em 
+DB\hypertarget{classConfigurationData_a6b159be92b02274088a4de34584eeabca30f2137384653ca12f00f3bc62a807ea}{}\label{classConfigurationData_a6b159be92b02274088a4de34584eeabca30f2137384653ca12f00f3bc62a807ea}
+}]\index{E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source}!Configuration\+Data@{Configuration\+Data}}\index{Configuration\+Data@{Configuration\+Data}!E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source}}\item[{\em 
+E\+N\+D\+\_\+\+O\+F\+\_\+\+Data\+Source\hypertarget{classConfigurationData_a6b159be92b02274088a4de34584eeabca38caa02da39a1a3ed2b30b02f3153a8f}{}\label{classConfigurationData_a6b159be92b02274088a4de34584eeabca38caa02da39a1a3ed2b30b02f3153a8f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 32 of file Configuration\+Data.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Configuration\+Data@{Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\index{Configuration\+Data@{Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Configuration\+Data()}{ConfigurationData()}}]{\setlength{\rightskip}{0pt plus 5cm}Configuration\+Data\+::\+Configuration\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a8cb8af69711def4253a59956e7b33c15}{}\label{classConfigurationData_a8cb8af69711def4253a59956e7b33c15}
+\index{Configuration\+Data@{Configuration\+Data}!````~Configuration\+Data@{$\sim$\+Configuration\+Data}}
+\index{````~Configuration\+Data@{$\sim$\+Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{$\sim$\+Configuration\+Data()}{~ConfigurationData()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Configuration\+Data\+::$\sim$\+Configuration\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classConfigurationData_a4f90f14791e6c4dc6836dffab3ae49ae}{}\label{classConfigurationData_a4f90f14791e6c4dc6836dffab3ae49ae}
+
+
+\subsection{Member Function Documentation}
+\index{Configuration\+Data@{Configuration\+Data}!get\+Bool\+Type\+Item\+Value@{get\+Bool\+Type\+Item\+Value}}
+\index{get\+Bool\+Type\+Item\+Value@{get\+Bool\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Bool\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, bool b\+Def\+Item\+Value=false)}{getBoolTypeItemValue(string strGroupName, string strItemName, bool bDefItemValue=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\+Data\+::get\+Bool\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{bool}]{b\+Def\+Item\+Value = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a4d298695a36f8537adff911698e8da6a}{}\label{classConfigurationData_a4d298695a36f8537adff911698e8da6a}
+\index{Configuration\+Data@{Configuration\+Data}!get\+Char\+Type\+Item\+Value@{get\+Char\+Type\+Item\+Value}}
+\index{get\+Char\+Type\+Item\+Value@{get\+Char\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Char\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, char def\+Item\+Value= \textquotesingle{}\textbackslash{}0\textquotesingle{})}{getCharTypeItemValue(string strGroupName, string strItemName, char defItemValue= '\textbackslash{}0')}}]{\setlength{\rightskip}{0pt plus 5cm}char Configuration\+Data\+::get\+Char\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{char}]{def\+Item\+Value = {\ttfamily \textquotesingle{}\textbackslash{}0\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a81813d9b987a56d31b1d49db4f308746}{}\label{classConfigurationData_a81813d9b987a56d31b1d49db4f308746}
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Configuration\+Data@{Get\+Configuration\+Data}}
+\index{Get\+Configuration\+Data@{Get\+Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Configuration\+Data()}{GetConfigurationData()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dyn\+Cfg\+Intf\+Return\+Codes} Configuration\+Data\+::\+Get\+Configuration\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a85ef47317952a9369b474c8df2525322}{}\label{classConfigurationData_a85ef47317952a9369b474c8df2525322}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConfigurationData_a85ef47317952a9369b474c8df2525322_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+Configuration\+Data@{get\+Configuration\+Data}}
+\index{get\+Configuration\+Data@{get\+Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Configuration\+Data()}{getConfigurationData()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf configuration\+Data\+\_\+map\+\_\+t} Configuration\+Data\+::get\+Configuration\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_a7a2e42c0440473858c382c39e3d66f3a}{}\label{classConfigurationData_a7a2e42c0440473858c382c39e3d66f3a}
+
+
+Definition at line 213 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Configuration\+Data\+From\+Db@{Get\+Configuration\+Data\+From\+Db}}
+\index{Get\+Configuration\+Data\+From\+Db@{Get\+Configuration\+Data\+From\+Db}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Configuration\+Data\+From\+Db(string svcname, bool is\+Success)}{GetConfigurationDataFromDb(string svcname, bool isSuccess)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dyn\+Cfg\+Intf\+Return\+Codes} Configuration\+Data\+::\+Get\+Configuration\+Data\+From\+Db (
+\begin{DoxyParamCaption}
+\item[{string}]{svcname, }
+\item[{bool}]{is\+Success}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_aa5fd34a8fabbe045ec9b607a94fc021c}{}\label{classConfigurationData_aa5fd34a8fabbe045ec9b607a94fc021c}
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Configuration\+Data\+From\+File@{Get\+Configuration\+Data\+From\+File}}
+\index{Get\+Configuration\+Data\+From\+File@{Get\+Configuration\+Data\+From\+File}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Configuration\+Data\+From\+File(const std\+::string file\+Name, bool is\+Success)}{GetConfigurationDataFromFile(const std::string fileName, bool isSuccess)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dyn\+Cfg\+Intf\+Return\+Codes} Configuration\+Data\+::\+Get\+Configuration\+Data\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{file\+Name, }
+\item[{bool}]{is\+Success}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_ae3be498bfc92a2162247810dfb37f6ec}{}\label{classConfigurationData_ae3be498bfc92a2162247810dfb37f6ec}
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Configuration\+Item\+Value@{Get\+Configuration\+Item\+Value}}
+\index{Get\+Configuration\+Item\+Value@{Get\+Configuration\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Configuration\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, T t\+Def\+Item\+Value)}{GetConfigurationItemValue(string strGroupName, string strItemName, T tDefItemValue)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Configuration\+Data\+::\+Get\+Configuration\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{T}]{t\+Def\+Item\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a5960620b5e6e32d288157bb35860aa4d}{}\label{classConfigurationData_a5960620b5e6e32d288157bb35860aa4d}
+
+
+Definition at line 275 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Data\+Source@{Get\+Data\+Source}}
+\index{Get\+Data\+Source@{Get\+Data\+Source}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Data\+Source()}{GetDataSource()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Source} Configuration\+Data\+::\+Get\+Data\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_a10b79d03076c79b4e16aeed78f50a427}{}\label{classConfigurationData_a10b79d03076c79b4e16aeed78f50a427}
+
+
+Definition at line 220 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+Double\+Type\+Item\+Value@{get\+Double\+Type\+Item\+Value}}
+\index{get\+Double\+Type\+Item\+Value@{get\+Double\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Double\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, double d\+Def\+Item\+Value=0.\+0)}{getDoubleTypeItemValue(string strGroupName, string strItemName, double dDefItemValue=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}double Configuration\+Data\+::get\+Double\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{double}]{d\+Def\+Item\+Value = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_aa3255f642441d984e8963896a22eeb04}{}\label{classConfigurationData_aa3255f642441d984e8963896a22eeb04}
+\index{Configuration\+Data@{Configuration\+Data}!Get\+File\+Name@{Get\+File\+Name}}
+\index{Get\+File\+Name@{Get\+File\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+File\+Name()}{GetFileName()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Configuration\+Data\+::\+Get\+File\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_abc7059c19e27c48a05ef4184c73a26bc}{}\label{classConfigurationData_abc7059c19e27c48a05ef4184c73a26bc}
+
+
+Definition at line 232 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+Group\+Name@{get\+Group\+Name}}
+\index{get\+Group\+Name@{get\+Group\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Group\+Name(const std\+::string str\+Group\+\_\+c, vector$<$ Dynamic\+Config\+Item\+Data\+Struct $>$ \&vt\+\_\+config\+Data)}{getGroupName(const std::string strGroup_c, vector< DynamicConfigItemDataStruct > &vt_configData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\+Data\+::get\+Group\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{str\+Group\+\_\+c, }
+\item[{vector$<$ {\bf Dynamic\+Config\+Item\+Data\+Struct} $>$ \&}]{vt\+\_\+config\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a37a40d143e56aa3577cace34049091df}{}\label{classConfigurationData_a37a40d143e56aa3577cace34049091df}
+\index{Configuration\+Data@{Configuration\+Data}!get\+Int\+Type\+Item\+Value@{get\+Int\+Type\+Item\+Value}}
+\index{get\+Int\+Type\+Item\+Value@{get\+Int\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Int\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, int n\+Def\+Item\+Value=0)}{getIntTypeItemValue(string strGroupName, string strItemName, int nDefItemValue=0)}}]{\setlength{\rightskip}{0pt plus 5cm}int Configuration\+Data\+::get\+Int\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{int}]{n\+Def\+Item\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a54bb3e76dfb9e720bbcb41a277e1aee1}{}\label{classConfigurationData_a54bb3e76dfb9e720bbcb41a277e1aee1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classConfigurationData_a54bb3e76dfb9e720bbcb41a277e1aee1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+Item\+Name\+Found@{get\+Item\+Name\+Found}}
+\index{get\+Item\+Name\+Found@{get\+Item\+Name\+Found}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Item\+Name\+Found()}{getItemNameFound()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\+Data\+::get\+Item\+Name\+Found (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_a7c04864007d1a78c1881b1ab83d78698}{}\label{classConfigurationData_a7c04864007d1a78c1881b1ab83d78698}
+
+
+Definition at line 207 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+Item\+Value\+String\+List@{get\+Item\+Value\+String\+List}}
+\index{get\+Item\+Value\+String\+List@{get\+Item\+Value\+String\+List}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Item\+Value\+String\+List(string str\+Group\+Name, string str\+Item\+Name)}{getItemValueStringList(string strGroupName, string strItemName)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$\& Configuration\+Data\+::get\+Item\+Value\+String\+List (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_af68323f3fea60118d8150ad469bd2a0a}{}\label{classConfigurationData_af68323f3fea60118d8150ad469bd2a0a}
+\index{Configuration\+Data@{Configuration\+Data}!get\+Long\+Type\+Item\+Value@{get\+Long\+Type\+Item\+Value}}
+\index{get\+Long\+Type\+Item\+Value@{get\+Long\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Long\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, long l\+Def\+Item\+Value=0)}{getLongTypeItemValue(string strGroupName, string strItemName, long lDefItemValue=0)}}]{\setlength{\rightskip}{0pt plus 5cm}long Configuration\+Data\+::get\+Long\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{long}]{l\+Def\+Item\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_ace8acd6f1471ffc98cc2df5e526d7e3a}{}\label{classConfigurationData_ace8acd6f1471ffc98cc2df5e526d7e3a}
+\index{Configuration\+Data@{Configuration\+Data}!get\+Name\+Value\+List@{get\+Name\+Value\+List}}
+\index{get\+Name\+Value\+List@{get\+Name\+Value\+List}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+Name\+Value\+List(string str\+Group\+Name)}{getNameValueList(string strGroupName)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$ Configuration\+Data\+::get\+Name\+Value\+List (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_acab5cb404d738f84daed25f604f692e4}{}\label{classConfigurationData_acab5cb404d738f84daed25f604f692e4}
+\index{Configuration\+Data@{Configuration\+Data}!Get\+Service\+Name@{Get\+Service\+Name}}
+\index{Get\+Service\+Name@{Get\+Service\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Get\+Service\+Name()}{GetServiceName()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Configuration\+Data\+::\+Get\+Service\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_a1deecfa52d87b2cfedf59390813bd2b3}{}\label{classConfigurationData_a1deecfa52d87b2cfedf59390813bd2b3}
+
+
+Definition at line 243 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!get\+String\+Type\+Item\+Value@{get\+String\+Type\+Item\+Value}}
+\index{get\+String\+Type\+Item\+Value@{get\+String\+Type\+Item\+Value}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{get\+String\+Type\+Item\+Value(string str\+Group\+Name, string str\+Item\+Name, string str\+Def\+Item\+Value="""")}{getStringTypeItemValue(string strGroupName, string strItemName, string strDefItemValue="")}}]{\setlength{\rightskip}{0pt plus 5cm}string Configuration\+Data\+::get\+String\+Type\+Item\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Group\+Name, }
+\item[{string}]{str\+Item\+Name, }
+\item[{string}]{str\+Def\+Item\+Value = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a59866f345224cbf203c835e0693771b9}{}\label{classConfigurationData_a59866f345224cbf203c835e0693771b9}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConfigurationData_a59866f345224cbf203c835e0693771b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Configuration\+Data@{Configuration\+Data}!print\+Configuration\+Data@{print\+Configuration\+Data}}
+\index{print\+Configuration\+Data@{print\+Configuration\+Data}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{print\+Configuration\+Data()}{printConfigurationData()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\+Data\+::print\+Configuration\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classConfigurationData_a93380d92256f8798651a07fce30f7d83}{}\label{classConfigurationData_a93380d92256f8798651a07fce30f7d83}
+\index{Configuration\+Data@{Configuration\+Data}!Set\+Data\+Source@{Set\+Data\+Source}}
+\index{Set\+Data\+Source@{Set\+Data\+Source}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Set\+Data\+Source(\+Data\+Source source)}{SetDataSource(DataSource source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Configuration\+Data\+::\+Set\+Data\+Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Source}}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_ac5288ab51744fc8697a24d2663136916}{}\label{classConfigurationData_ac5288ab51744fc8697a24d2663136916}
+
+
+Definition at line 226 of file Configuration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConfigurationData_ac5288ab51744fc8697a24d2663136916_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Configuration\+Data@{Configuration\+Data}!Set\+File\+Name@{Set\+File\+Name}}
+\index{Set\+File\+Name@{Set\+File\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Set\+File\+Name(string str\+File\+Name)}{SetFileName(string strFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Configuration\+Data\+::\+Set\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+File\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_a54f43e41906262c4a336b370a4f1726c}{}\label{classConfigurationData_a54f43e41906262c4a336b370a4f1726c}
+
+
+Definition at line 237 of file Configuration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConfigurationData_a54f43e41906262c4a336b370a4f1726c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Configuration\+Data@{Configuration\+Data}!Set\+Service\+Name@{Set\+Service\+Name}}
+\index{Set\+Service\+Name@{Set\+Service\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{Set\+Service\+Name(string str\+Svc\+Name)}{SetServiceName(string strSvcName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Configuration\+Data\+::\+Set\+Service\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Svc\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classConfigurationData_aeaa0566bed9b1c41ae77a363a811e1ce}{}\label{classConfigurationData_aeaa0566bed9b1c41ae77a363a811e1ce}
+
+
+Definition at line 248 of file Configuration\+Data.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classConfigurationData_aeaa0566bed9b1c41ae77a363a811e1ce_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Configuration\+Data@{Configuration\+Data}!configuration\+Data\+\_\+map@{configuration\+Data\+\_\+map}}
+\index{configuration\+Data\+\_\+map@{configuration\+Data\+\_\+map}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{configuration\+Data\+\_\+map}{configurationData_map}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf configuration\+Data\+\_\+map\+\_\+t} Configuration\+Data\+::configuration\+Data\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classConfigurationData_a7068df8bceb0fd7e24abde430532eeca}{}\label{classConfigurationData_a7068df8bceb0fd7e24abde430532eeca}
+
+
+Definition at line 41 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!m\+\_\+b\+Item\+Found\+Flag@{m\+\_\+b\+Item\+Found\+Flag}}
+\index{m\+\_\+b\+Item\+Found\+Flag@{m\+\_\+b\+Item\+Found\+Flag}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{m\+\_\+b\+Item\+Found\+Flag}{m_bItemFoundFlag}}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\+Data\+::m\+\_\+b\+Item\+Found\+Flag\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classConfigurationData_a358d8d3d441e31872a9f52a5dd0a8943}{}\label{classConfigurationData_a358d8d3d441e31872a9f52a5dd0a8943}
+
+
+Definition at line 259 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!m\+\_\+data\+Source@{m\+\_\+data\+Source}}
+\index{m\+\_\+data\+Source@{m\+\_\+data\+Source}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{m\+\_\+data\+Source}{m_dataSource}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Source} Configuration\+Data\+::m\+\_\+data\+Source\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classConfigurationData_a76fde55e5e58cd5726449bee19c378dd}{}\label{classConfigurationData_a76fde55e5e58cd5726449bee19c378dd}
+
+
+Definition at line 255 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!m\+\_\+str\+File\+Name@{m\+\_\+str\+File\+Name}}
+\index{m\+\_\+str\+File\+Name@{m\+\_\+str\+File\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{m\+\_\+str\+File\+Name}{m_strFileName}}]{\setlength{\rightskip}{0pt plus 5cm}string Configuration\+Data\+::m\+\_\+str\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classConfigurationData_a3c2246db7a0a2cfa91081e91a98625df}{}\label{classConfigurationData_a3c2246db7a0a2cfa91081e91a98625df}
+
+
+Definition at line 257 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!m\+\_\+str\+Service\+Name@{m\+\_\+str\+Service\+Name}}
+\index{m\+\_\+str\+Service\+Name@{m\+\_\+str\+Service\+Name}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{m\+\_\+str\+Service\+Name}{m_strServiceName}}]{\setlength{\rightskip}{0pt plus 5cm}string Configuration\+Data\+::m\+\_\+str\+Service\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classConfigurationData_aae2da98258156ab8a7b4884694d5cea7}{}\label{classConfigurationData_aae2da98258156ab8a7b4884694d5cea7}
+
+
+Definition at line 256 of file Configuration\+Data.\+h.
+
+\index{Configuration\+Data@{Configuration\+Data}!m\+\_\+sz\+Error\+Message@{m\+\_\+sz\+Error\+Message}}
+\index{m\+\_\+sz\+Error\+Message@{m\+\_\+sz\+Error\+Message}!Configuration\+Data@{Configuration\+Data}}
+\subsubsection[{\texorpdfstring{m\+\_\+sz\+Error\+Message}{m_szErrorMessage}}]{\setlength{\rightskip}{0pt plus 5cm}char Configuration\+Data\+::m\+\_\+sz\+Error\+Message\mbox{[}512\mbox{]}}\hypertarget{classConfigurationData_aefb528ceef393a3d4a016ab52fca5c0b}{}\label{classConfigurationData_aefb528ceef393a3d4a016ab52fca5c0b}
+
+
+Definition at line 38 of file Configuration\+Data.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+Y\+N\+\_\+\+C\+O\+N\+F\+I\+G/include/\hyperlink{ConfigurationData_8h}{Configuration\+Data.\+h}\end{DoxyCompactItemize}

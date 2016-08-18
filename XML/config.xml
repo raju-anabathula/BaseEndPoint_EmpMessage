@@ -1,0 +1,32 @@
+<Configuration>
+<ItemGroup>
+	<Name>PIPE</Name>
+    <Item name="PIPE_NAME" value="pipe" type="STRING" desc=""/>
+</ItemGroup>
+<ItemGroup>
+	<Name>FIFO</Name>
+    <Item name="FIFO_NAME" value="fifo" type="STRING" desc=""/>
+    <Item name="FIFO1" value="fifo1" type="STRING" desc=""/>
+    <Item name="FIFO2" value="fifo2" type="STRING" desc=""/>
+</ItemGroup>
+<ItemGroup>
+	<Name>MSGQUEUE</Name>
+    <Item name="MSGQOBJ_NAME" value="/myqueue1123" type="STRING" desc=""/>
+</ItemGroup>
+<ItemGroup>
+	<Name>FILELOCKING</Name>
+    <Item name="FILE_PATH" value="fileLock.txt" type="STRING" desc=""/>
+    <Item name="FILE_WRITE" value="fileWrite.txt" type="STRING" desc=""/>
+</ItemGroup>
+<ItemGroup>
+	<Name>SHAREDMEMORY</Name>
+    <Item name="SHMOBJ_PATH" value="/sharedObject" type="STRING" desc=""/>
+    <Item name="SEMOBJ_PATH" value="/semaphore" type="STRING" desc=""/>
+</ItemGroup>
+
+<ItemGroup>
+	<Name>UDS</Name>
+    <Item name="SOCKET_NAME" value="socket2" type="STRING" desc=""/>
+    <Item name="MAX_CONNECTIONS" value="5" type="INT" desc=""/>
+</ItemGroup>
+</Configuration>

@@ -1,0 +1,160 @@
+\hypertarget{classipc_1_1Fifo}{}\section{ipc\+:\+:Fifo Class Reference}
+\label{classipc_1_1Fifo}\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+
+
+{\ttfamily \#include $<$Fifo.\+h$>$}
+
+
+
+Inheritance diagram for ipc\+:\+:Fifo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classipc_1_1Fifo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ipc\+:\+:Fifo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classipc_1_1Fifo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1Fifo_a5b466d3a17d14a6737a64e478b52ae3a}{Fifo} ()
+\item 
+virtual \hyperlink{classipc_1_1Fifo_ac057810a530bf36506bd87ecd0a52964}{$\sim$\+Fifo} ()
+\item 
+void \hyperlink{classipc_1_1Fifo_af8199c5aaa70ac42ea34f36a8209ecda}{initialize} (string str\+Name)
+\item 
+Emp\+Full\+Message $\ast$ \hyperlink{classipc_1_1Fifo_a9c512a6ecabcc469432c068cdfeb7153}{read\+Data} ()
+\item 
+void \hyperlink{classipc_1_1Fifo_aa134421064d4837dbd2361174fad955f}{write\+Data} (Emp\+Full\+Message $\ast$message)
+\item 
+void \hyperlink{classipc_1_1Fifo_ac0797bc0cd5e0c2bf81aa4e1d6ed460f}{destroy} ()
+\item 
+bool \hyperlink{classipc_1_1Fifo_aa409525e096829e18e1f9d8b07b49754}{get\+Current\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Fifo.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!Fifo@{Fifo}}
+\index{Fifo@{Fifo}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{Fifo()}{Fifo()}}]{\setlength{\rightskip}{0pt plus 5cm}Fifo\+::\+Fifo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1Fifo_a5b466d3a17d14a6737a64e478b52ae3a}{}\label{classipc_1_1Fifo_a5b466d3a17d14a6737a64e478b52ae3a}
+
+
+Definition at line 24 of file Fifo.\+cpp.
+
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!````~Fifo@{$\sim$\+Fifo}}
+\index{````~Fifo@{$\sim$\+Fifo}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{$\sim$\+Fifo()}{~Fifo()}}]{\setlength{\rightskip}{0pt plus 5cm}Fifo\+::$\sim$\+Fifo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_ac057810a530bf36506bd87ecd0a52964}{}\label{classipc_1_1Fifo_ac057810a530bf36506bd87ecd0a52964}
+
+
+Definition at line 33 of file Fifo.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!destroy@{destroy}}
+\index{destroy@{destroy}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{destroy()}{destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void Fifo\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_ac0797bc0cd5e0c2bf81aa4e1d6ed460f}{}\label{classipc_1_1Fifo_ac0797bc0cd5e0c2bf81aa4e1d6ed460f}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a8d30be1048be238f4cef3240bfca143d}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 180 of file Fifo.\+cpp.
+
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!get\+Current\+State@{get\+Current\+State}}
+\index{get\+Current\+State@{get\+Current\+State}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{get\+Current\+State()}{getCurrentState()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Fifo\+::get\+Current\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_aa409525e096829e18e1f9d8b07b49754}{}\label{classipc_1_1Fifo_aa409525e096829e18e1f9d8b07b49754}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a06f4cd9d1be23823c1f772da48779b58}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 191 of file Fifo.\+cpp.
+
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!initialize@{initialize}}
+\index{initialize@{initialize}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{initialize(string str\+Name)}{initialize(string strName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Fifo\+::initialize (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_af8199c5aaa70ac42ea34f36a8209ecda}{}\label{classipc_1_1Fifo_af8199c5aaa70ac42ea34f36a8209ecda}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a3a0ed19000bba31336d9e2d3f23e9e88}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 43 of file Fifo.\+cpp.
+
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{read\+Data()}{readData()}}]{\setlength{\rightskip}{0pt plus 5cm}Emp\+Full\+Message $\ast$ Fifo\+::read\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_a9c512a6ecabcc469432c068cdfeb7153}{}\label{classipc_1_1Fifo_a9c512a6ecabcc469432c068cdfeb7153}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a6617ccd3bd8d8d314292db6ef3c9e7d5}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 84 of file Fifo.\+cpp.
+
+\index{ipc\+::\+Fifo@{ipc\+::\+Fifo}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!ipc\+::\+Fifo@{ipc\+::\+Fifo}}
+\subsubsection[{\texorpdfstring{write\+Data(\+Emp\+Full\+Message $\ast$message)}{writeData(EmpFullMessage *message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Fifo\+::write\+Data (
+\begin{DoxyParamCaption}
+\item[{Emp\+Full\+Message $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Fifo_aa134421064d4837dbd2361174fad955f}{}\label{classipc_1_1Fifo_aa134421064d4837dbd2361174fad955f}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a3dfd16e4b75e507f8c5fe9961934aa37}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 150 of file Fifo.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+I\+P\+C\+\_\+\+F\+I\+F\+O/\hyperlink{Fifo_8h}{Fifo.\+h}\item 
+I\+P\+C\+\_\+\+F\+I\+F\+O/\hyperlink{Fifo_8cpp}{Fifo.\+cpp}\end{DoxyCompactItemize}

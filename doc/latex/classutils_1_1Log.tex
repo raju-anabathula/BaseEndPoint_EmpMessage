@@ -1,0 +1,980 @@
+\hypertarget{classutils_1_1Log}{}\section{utils\+:\+:Log Class Reference}
+\label{classutils_1_1Log}\index{utils\+::\+Log@{utils\+::\+Log}}
+
+
+{\ttfamily \#include $<$Log.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{Log\+Levels} \{ \\*
+\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aaa3a7218440adf6d603dcaceabb683a12}{E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL} = 1, 
+\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aac494c60808c9ca13881edb977d888127}{W\+A\+R\+N\+\_\+\+L\+E\+V\+EL} = 2, 
+\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa9c80ebf03876dd47244938a0d60631a5}{I\+N\+F\+O\+\_\+\+L\+E\+V\+EL} = 3, 
+\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa023731e6ba36eed6733acfa4e182dc85}{T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL} = 4, 
+\\*
+\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aab0e7af85fa3d909da693e83b540ac2a3}{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels}
+ \}
+\item 
+enum \hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864}{Elaps\+Tm\+Lvls} \{ \\*
+\hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ac2b82d02aa2ddf29cc1e3f5385644267}{E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY} = 1, 
+\hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a14889f3c1fee759c05748d57ffe33798}{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED} = 2, 
+\hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a35b8d83c7001e838bdab3500441becd8}{E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE} = 4, 
+\hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ae1ccab5063c41d5d18e2cd7535a55983}{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED} = 8, 
+\\*
+\hyperlink{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ad1c7a76ee5bd172473f5018c310d9eaa}{E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls} = 16
+ \}
+\item 
+enum \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+Dest} \{ \\*
+\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa073188971cc5f6222bcd080faba0e170}{N\+O\+NE} = 0, 
+\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{F\+I\+LE} = 1, 
+\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa9b86815165af42d845410f10dfd2e061}{D\+A\+T\+A\+B\+A\+SE} = 2, 
+\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa777a40d3f6fbce3f8d928c9d791e6d03}{B\+O\+TH} = 3, 
+\\*
+\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aacabf499629d9834d891a51d030cdef68}{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1Log_a889fde15d21820f27d32315d53e75a06}{Log} ()
+\item 
+\hyperlink{classutils_1_1Log_aca4c4527042fc72294f36013924bb309}{$\sim$\+Log} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classutils_1_1Log_ad5b43b0f5ea6a8b447407a33cda5a4bf}{is\+Trace\+Enabled} ()
+\item 
+static bool \hyperlink{classutils_1_1Log_af831fb2def9d0984c712ca6c73cf2cd8}{is\+Info\+Enabled} ()
+\item 
+static bool \hyperlink{classutils_1_1Log_a99a23d525a51c3290f793dedadc65470}{is\+Warn\+Enabled} ()
+\item 
+static bool \hyperlink{classutils_1_1Log_ac8b80b98cd9f5de11e53980a873862a4}{is\+Error\+Enabled} ()
+\item 
+static void \hyperlink{classutils_1_1Log_a78fee29378f2064f9ee8299cb59d26ce}{init} (const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Deprecated methods (Remove as soon as possible) /////. \end{DoxyCompactList}\item 
+static void \hyperlink{classutils_1_1Log_a0a94150091c4d2768da2eac92006bdc7}{init} (const char $\ast$logapp, const char $\ast$logdir, const \hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{Log\+Levels} prio\+Lvl, const bool flag)
+\item 
+static void \hyperlink{classutils_1_1Log_aecbaeed2809b1cf54b5d78fbc9870ebe}{set\+Elapsed} (char $\ast$value, int mask)
+\item 
+static void \hyperlink{classutils_1_1Log_a37ae89eca0ad705c5e948710406e2054}{trace} (const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=N\+U\+LL, const char $\ast$sz\+Method\+Name=N\+U\+LL, const char $\ast$sz\+Src\+Filename=N\+U\+LL, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest=\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{Log\+::\+F\+I\+LE}, bool use\+Param\+Destination=false)
+\item 
+static void \hyperlink{classutils_1_1Log_acee86547a863c04b349ab46a3b7ba9f2}{info} (const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=N\+U\+LL, const char $\ast$sz\+Method\+Name=N\+U\+LL, const char $\ast$sz\+Src\+Filename=N\+U\+LL, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest=\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{Log\+::\+F\+I\+LE}, bool use\+Param\+Destination=false)
+\item 
+static void \hyperlink{classutils_1_1Log_aaff384f2d48d78b72b9c5e72ebed18db}{warn} (const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=N\+U\+LL, const char $\ast$sz\+Method\+Name=N\+U\+LL, const char $\ast$sz\+Src\+Filename=N\+U\+LL, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest=\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{Log\+::\+F\+I\+LE}, bool use\+Param\+Destination=false)
+\item 
+static void \hyperlink{classutils_1_1Log_a79149fab5ab512aef26dbebc45e936d1}{error} (const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=N\+U\+LL, const char $\ast$sz\+Method\+Name=N\+U\+LL, const char $\ast$sz\+Src\+Filename=N\+U\+LL, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest=\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{Log\+::\+F\+I\+LE}, bool use\+Param\+Destination=false)
+\item 
+static void \hyperlink{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{log} (\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{Log\+Levels} n\+Log\+Level, const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=N\+U\+LL, const char $\ast$sz\+Method\+Name=N\+U\+LL, const char $\ast$sz\+Src\+Filename=N\+U\+LL, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest=\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{Log\+::\+F\+I\+LE}, bool use\+Param\+Destination=false)
+\item 
+static unsigned long \hyperlink{classutils_1_1Log_ae8791e18abf55ade26b8bcbae0921eaf}{Get\+Tick\+Count} ()
+\item 
+static void \hyperlink{classutils_1_1Log_a3288f62f0edee03354f3c258aabccae3}{log\+Elapsed\+Time} (const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, const char $\ast$logname\+Override, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0, bool elapsed\+Time\+Db\+Logging=false, bool use\+Param\+Destination=false)
+\item 
+static void \hyperlink{classutils_1_1Log_a42cc9a0f0ecd76abd678ebd7ac59d8d7}{log\+Elapsed\+Time} (const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0)
+\item 
+static void \hyperlink{classutils_1_1Log_ab7985810504b1e575a408a3fc14118d0}{log\+Elapsed\+Time} (const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+::\+Log\+Dest} nlog\+Dest, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0)
+\item 
+static bool \hyperlink{classutils_1_1Log_a17b6d2bfbc21f2aa5af7815a1c2ca166}{init\+Done} ()
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_a20b001de07bd7b008126037bed0d1393}{strip\+File\+Name} (const std\+::string \&sz\+Original\+File\+Name, bool strip\+Ext\+Flag=false)
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_a779af049e980e1e02bc2e8b51d4557b1}{get\+Log\+Level\+String} (\hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{Log\+Levels} n\+Log\+Level)
+\begin{DoxyCompactList}\small\item\em String constant holding the filename to be used if the requested file cannot be opened. \end{DoxyCompactList}\item 
+static const \hyperlink{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{Log\+Levels} \hyperlink{classutils_1_1Log_aa6c0a789ec50e1c59c4598e0a5436c2d}{get\+String\+To\+Log\+Level} (const std\+::string \&log\+Level)
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_a48fa60190dc3fea1f83fe40ff2457d93}{get\+Log\+Dir} ()
+\item 
+static \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+Dest} \hyperlink{classutils_1_1Log_ad5953c44e5c56d1bd06597320f1ff684}{get\+Log\+Destination} ()
+\item 
+static void \hyperlink{classutils_1_1Log_a9bc0e1c6ce4e14943da1e94a36833b59}{set\+Log\+Destination} (\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+Dest} dest)
+\item 
+static void \hyperlink{classutils_1_1Log_ac526c9aee25389e092ba27c5f5feb3e8}{log\+Message\+To\+File} ()
+\item 
+static const \hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+Dest} \hyperlink{classutils_1_1Log_a475ccc5ab88a7b288aaa89d67220c2b4}{get\+String\+To\+Log\+Destination} (const std\+::string \&log\+Destination)
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_a1b9c322df1f6e867cde069e02649df03}{get\+Log\+Destination\+String} (\hyperlink{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{Log\+Dest} n\+Log\+Dest)
+\item 
+static void \hyperlink{classutils_1_1Log_a0d68bc67c1342672dc265bf16149b119}{set\+Input\+Source\+File} (std\+::string src\+File)
+\item 
+static const char $\ast$ \hyperlink{classutils_1_1Log_a56119815a8f43fdc9a7c942cdd29108b}{get\+Application\+Id} ()
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_ad34711830c35c8a91b61817a0669c4f8}{Get\+Date\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \hyperlink{classutils_1_1Log_a887edb129af7794c19cf05ade96f892d}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME} = \char`\"{}/tmp/hcu\+\_\+error.\+log\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classutils_1_1Log_afbdd825cb55cc5e13c08f347590debe9}{get\+Log\+Accs\+Client} (bool createnew=false)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file Log.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{utils\+::\+Log@{utils\+::\+Log}!Elaps\+Tm\+Lvls@{Elaps\+Tm\+Lvls}}
+\index{Elaps\+Tm\+Lvls@{Elaps\+Tm\+Lvls}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Elaps\+Tm\+Lvls}{ElapsTmLvls}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf utils\+::\+Log\+::\+Elaps\+Tm\+Lvls}}\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY@{E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY@{E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY}}\item[{\em 
+E\+L\+A\+P\+S\+T\+M\+\_\+\+S\+U\+M\+M\+A\+RY\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ac2b82d02aa2ddf29cc1e3f5385644267}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ac2b82d02aa2ddf29cc1e3f5385644267}
+}]\index{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED@{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED@{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED}}\item[{\em 
+E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+E\+T\+A\+I\+L\+ED\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a14889f3c1fee759c05748d57ffe33798}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a14889f3c1fee759c05748d57ffe33798}
+}]Show summary of elapsed times only. \index{E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE@{E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE@{E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}}\item[{\em 
+E\+L\+A\+P\+S\+T\+M\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a35b8d83c7001e838bdab3500441becd8}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864a35b8d83c7001e838bdab3500441becd8}
+}]Show detailed elapsed times only. \index{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}\item[{\em 
+E\+L\+A\+P\+S\+T\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ae1ccab5063c41d5d18e2cd7535a55983}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ae1ccab5063c41d5d18e2cd7535a55983}
+}]Show elapsed times only when out of range of norm. \index{E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls}}\item[{\em 
+E\+N\+D\+\_\+\+O\+F\+\_\+\+Elaps\+Tm\+Lvls\hypertarget{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ad1c7a76ee5bd172473f5018c310d9eaa}{}\label{classutils_1_1Log_aeb031aea7d8d59f98a6857915d32e864ad1c7a76ee5bd172473f5018c310d9eaa}
+}]Disable elapsed times logging completely. \end{description}
+\end{Desc}
+
+
+Definition at line 57 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!Log\+Dest@{Log\+Dest}}
+\index{Log\+Dest@{Log\+Dest}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Log\+Dest}{LogDest}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf utils\+::\+Log\+::\+Log\+Dest}}\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5a}
+
+\begin{DoxyItemize}
+\item Switching values for overriding message destinations 
+\end{DoxyItemize}\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+NE@{N\+O\+NE}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa073188971cc5f6222bcd080faba0e170}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa073188971cc5f6222bcd080faba0e170}
+}]\index{F\+I\+LE@{F\+I\+LE}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!F\+I\+LE@{F\+I\+LE}}\item[{\em 
+F\+I\+LE\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aaa4c1e78fb35ae098bba52e43e2a5e0e5}
+}]No destination -\/ effectively, do not log. \index{D\+A\+T\+A\+B\+A\+SE@{D\+A\+T\+A\+B\+A\+SE}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!D\+A\+T\+A\+B\+A\+SE@{D\+A\+T\+A\+B\+A\+SE}}\item[{\em 
+D\+A\+T\+A\+B\+A\+SE\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa9b86815165af42d845410f10dfd2e061}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa9b86815165af42d845410f10dfd2e061}
+}]\hyperlink{classutils_1_1Log}{Log} message to a file -\/ default. \index{B\+O\+TH@{B\+O\+TH}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!B\+O\+TH@{B\+O\+TH}}\item[{\em 
+B\+O\+TH\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa777a40d3f6fbce3f8d928c9d791e6d03}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aa777a40d3f6fbce3f8d928c9d791e6d03}
+}]Insert log message to database table. \index{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest}}\item[{\em 
+E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Dest\hypertarget{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aacabf499629d9834d891a51d030cdef68}{}\label{classutils_1_1Log_aa77064096777fe92d4ff8f6d68d42d5aacabf499629d9834d891a51d030cdef68}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 69 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!Log\+Levels@{Log\+Levels}}
+\index{Log\+Levels@{Log\+Levels}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Log\+Levels}{LogLevels}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf utils\+::\+Log\+::\+Log\+Levels}}\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54a}
+Switching values for filtering log messages \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL@{E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL@{E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL}}\item[{\em 
+E\+R\+R\+O\+R\+\_\+\+L\+E\+V\+EL\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aaa3a7218440adf6d603dcaceabb683a12}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aaa3a7218440adf6d603dcaceabb683a12}
+}]\index{W\+A\+R\+N\+\_\+\+L\+E\+V\+EL@{W\+A\+R\+N\+\_\+\+L\+E\+V\+EL}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!W\+A\+R\+N\+\_\+\+L\+E\+V\+EL@{W\+A\+R\+N\+\_\+\+L\+E\+V\+EL}}\item[{\em 
+W\+A\+R\+N\+\_\+\+L\+E\+V\+EL\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aac494c60808c9ca13881edb977d888127}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aac494c60808c9ca13881edb977d888127}
+}]Error condition -\/ default. \index{I\+N\+F\+O\+\_\+\+L\+E\+V\+EL@{I\+N\+F\+O\+\_\+\+L\+E\+V\+EL}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!I\+N\+F\+O\+\_\+\+L\+E\+V\+EL@{I\+N\+F\+O\+\_\+\+L\+E\+V\+EL}}\item[{\em 
+I\+N\+F\+O\+\_\+\+L\+E\+V\+EL\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa9c80ebf03876dd47244938a0d60631a5}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa9c80ebf03876dd47244938a0d60631a5}
+}]Warning condition -\/ non-\/critical error. \index{T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL@{T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL@{T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL}}\item[{\em 
+T\+R\+A\+C\+E\+\_\+\+L\+E\+V\+EL\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa023731e6ba36eed6733acfa4e182dc85}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aa023731e6ba36eed6733acfa4e182dc85}
+}]Informational. \index{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels}!utils\+::\+Log@{utils\+::\+Log}}\index{utils\+::\+Log@{utils\+::\+Log}!E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels@{E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels}}\item[{\em 
+E\+N\+D\+\_\+\+O\+F\+\_\+\+Log\+Levels\hypertarget{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aab0e7af85fa3d909da693e83b540ac2a3}{}\label{classutils_1_1Log_a8f981afda2b7802a6e9ca4aac269d54aab0e7af85fa3d909da693e83b540ac2a3}
+}]Debugging messages. \end{description}
+\end{Desc}
+
+
+Definition at line 48 of file Log.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{utils\+::\+Log@{utils\+::\+Log}!Log@{Log}}
+\index{Log@{Log}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Log()}{Log()}}]{\setlength{\rightskip}{0pt plus 5cm}utils\+::\+Log\+::\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classutils_1_1Log_a889fde15d21820f27d32315d53e75a06}{}\label{classutils_1_1Log_a889fde15d21820f27d32315d53e75a06}
+
+
+Definition at line 77 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!````~Log@{$\sim$\+Log}}
+\index{````~Log@{$\sim$\+Log}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{$\sim$\+Log()}{~Log()}}]{\setlength{\rightskip}{0pt plus 5cm}utils\+::\+Log\+::$\sim$\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classutils_1_1Log_aca4c4527042fc72294f36013924bb309}{}\label{classutils_1_1Log_aca4c4527042fc72294f36013924bb309}
+
+
+Definition at line 81 of file Log.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{utils\+::\+Log@{utils\+::\+Log}!error@{error}}
+\index{error@{error}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{error(const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=\+N\+U\+L\+L, const char $\ast$sz\+Method\+Name=\+N\+U\+L\+L, const char $\ast$sz\+Src\+Filename=\+N\+U\+L\+L, Log\+::\+Log\+Dest nlog\+Dest=\+Log\+::\+F\+I\+L\+E, bool use\+Param\+Destination=false)}{error(const char *szFileName, const int nLineNumber, const char *szMsg, const char *szApplicationId=NULL, const char *szMethodName=NULL, const char *szSrcFilename=NULL, Log::LogDest nlogDest=Log::FILE, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+File\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg, }
+\item[{const char $\ast$}]{sz\+Application\+Id = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Method\+Name = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Src\+Filename = {\ttfamily NULL}, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest = {\ttfamily {\bf Log\+::\+F\+I\+LE}}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a79149fab5ab512aef26dbebc45e936d1}{}\label{classutils_1_1Log_a79149fab5ab512aef26dbebc45e936d1}
+Send an error message to the logging output -\/ unrecoverable error 
+\begin{DoxyParams}{Parameters}
+{\em sz\+File\+Name} & file name of the file from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg} & message string to be logged \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Method\+Name} & the method name from where this function has been called \\
+\hline
+{\em sz\+Src\+Filename} & name of file which is getting procceses at the time of this function call \\
+\hline
+{\em nlog\+Dest} & which destination(file/database) the log message need to be logged \\
+\hline
+{\em use\+Param\+Destination} & boolean variable which says wether the log destination is passed in parameter or the dynamic config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{Log\+::log} 
+\end{DoxySeeAlso}
+
+
+Definition at line 171 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Application\+Id@{get\+Application\+Id}}
+\index{get\+Application\+Id@{get\+Application\+Id}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Application\+Id()}{getApplicationId()}}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ utils\+::\+Log\+::get\+Application\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a56119815a8f43fdc9a7c942cdd29108b}{}\label{classutils_1_1Log_a56119815a8f43fdc9a7c942cdd29108b}
+
+
+Definition at line 354 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!Get\+Date\+String@{Get\+Date\+String}}
+\index{Get\+Date\+String@{Get\+Date\+String}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Get\+Date\+String()}{GetDateString()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string utils\+::\+Log\+::\+Get\+Date\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_ad34711830c35c8a91b61817a0669c4f8}{}\label{classutils_1_1Log_ad34711830c35c8a91b61817a0669c4f8}
+
+
+Definition at line 245 of file Log.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_ad34711830c35c8a91b61817a0669c4f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Log\+Accs\+Client@{get\+Log\+Accs\+Client}}
+\index{get\+Log\+Accs\+Client@{get\+Log\+Accs\+Client}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Log\+Accs\+Client(bool createnew=false)}{getLogAccsClient(bool createnew=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::get\+Log\+Accs\+Client (
+\begin{DoxyParamCaption}
+\item[{bool}]{createnew = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classutils_1_1Log_afbdd825cb55cc5e13c08f347590debe9}{}\label{classutils_1_1Log_afbdd825cb55cc5e13c08f347590debe9}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_afbdd825cb55cc5e13c08f347590debe9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Log\+Destination@{get\+Log\+Destination}}
+\index{get\+Log\+Destination@{get\+Log\+Destination}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Log\+Destination()}{getLogDestination()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Log\+Dest} utils\+::\+Log\+::get\+Log\+Destination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_ad5953c44e5c56d1bd06597320f1ff684}{}\label{classutils_1_1Log_ad5953c44e5c56d1bd06597320f1ff684}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_ad5953c44e5c56d1bd06597320f1ff684_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Log\+Destination\+String@{get\+Log\+Destination\+String}}
+\index{get\+Log\+Destination\+String@{get\+Log\+Destination\+String}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Log\+Destination\+String(\+Log\+Dest n\+Log\+Dest)}{getLogDestinationString(LogDest nLogDest)}}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string utils\+::\+Log\+::get\+Log\+Destination\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\+Dest}}]{n\+Log\+Dest}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a1b9c322df1f6e867cde069e02649df03}{}\label{classutils_1_1Log_a1b9c322df1f6e867cde069e02649df03}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_a1b9c322df1f6e867cde069e02649df03_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Log\+Dir@{get\+Log\+Dir}}
+\index{get\+Log\+Dir@{get\+Log\+Dir}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Log\+Dir()}{getLogDir()}}]{\setlength{\rightskip}{0pt plus 5cm}static const std\+::string utils\+::\+Log\+::get\+Log\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a48fa60190dc3fea1f83fe40ff2457d93}{}\label{classutils_1_1Log_a48fa60190dc3fea1f83fe40ff2457d93}
+
+
+Definition at line 276 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+Log\+Level\+String@{get\+Log\+Level\+String}}
+\index{get\+Log\+Level\+String@{get\+Log\+Level\+String}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+Log\+Level\+String(\+Log\+Levels n\+Log\+Level)}{getLogLevelString(LogLevels nLogLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}const string utils\+::\+Log\+::get\+Log\+Level\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\+Levels}}]{n\+Log\+Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a779af049e980e1e02bc2e8b51d4557b1}{}\label{classutils_1_1Log_a779af049e980e1e02bc2e8b51d4557b1}
+
+
+String constant holding the filename to be used if the requested file cannot be opened. 
+
+Converts the log level enum into a string to be put in the log message 
+\begin{DoxyParams}{Parameters}
+{\em n\+Log\+Level} & the level assigned to this message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this level is active, false if it is to be ignored 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Log.\+cpp.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+String\+To\+Log\+Destination@{get\+String\+To\+Log\+Destination}}
+\index{get\+String\+To\+Log\+Destination@{get\+String\+To\+Log\+Destination}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+String\+To\+Log\+Destination(const std\+::string \&log\+Destination)}{getStringToLogDestination(const std::string &logDestination)}}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Log\+Dest} utils\+::\+Log\+::get\+String\+To\+Log\+Destination (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{log\+Destination}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a475ccc5ab88a7b288aaa89d67220c2b4}{}\label{classutils_1_1Log_a475ccc5ab88a7b288aaa89d67220c2b4}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classutils_1_1Log_a475ccc5ab88a7b288aaa89d67220c2b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!get\+String\+To\+Log\+Level@{get\+String\+To\+Log\+Level}}
+\index{get\+String\+To\+Log\+Level@{get\+String\+To\+Log\+Level}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{get\+String\+To\+Log\+Level(const std\+::string \&log\+Level)}{getStringToLogLevel(const std::string &logLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Log\+::\+Log\+Levels} utils\+::\+Log\+::get\+String\+To\+Log\+Level (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{log\+Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_aa6c0a789ec50e1c59c4598e0a5436c2d}{}\label{classutils_1_1Log_aa6c0a789ec50e1c59c4598e0a5436c2d}
+
+
+Definition at line 114 of file Log.\+cpp.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!Get\+Tick\+Count@{Get\+Tick\+Count}}
+\index{Get\+Tick\+Count@{Get\+Tick\+Count}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{Get\+Tick\+Count()}{GetTickCount()}}]{\setlength{\rightskip}{0pt plus 5cm}static unsigned long utils\+::\+Log\+::\+Get\+Tick\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_ae8791e18abf55ade26b8bcbae0921eaf}{}\label{classutils_1_1Log_ae8791e18abf55ade26b8bcbae0921eaf}
+Get Tick Count \begin{DoxyReturn}{Returns}
+unsigned long tick count in milliseconds 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classutils_1_1Log_ae8791e18abf55ade26b8bcbae0921eaf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!info@{info}}
+\index{info@{info}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{info(const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=\+N\+U\+L\+L, const char $\ast$sz\+Method\+Name=\+N\+U\+L\+L, const char $\ast$sz\+Src\+Filename=\+N\+U\+L\+L, Log\+::\+Log\+Dest nlog\+Dest=\+Log\+::\+F\+I\+L\+E, bool use\+Param\+Destination=false)}{info(const char *szFileName, const int nLineNumber, const char *szMsg, const char *szApplicationId=NULL, const char *szMethodName=NULL, const char *szSrcFilename=NULL, Log::LogDest nlogDest=Log::FILE, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+File\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg, }
+\item[{const char $\ast$}]{sz\+Application\+Id = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Method\+Name = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Src\+Filename = {\ttfamily NULL}, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest = {\ttfamily {\bf Log\+::\+F\+I\+LE}}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_acee86547a863c04b349ab46a3b7ba9f2}{}\label{classutils_1_1Log_acee86547a863c04b349ab46a3b7ba9f2}
+Send an informational message to the logging output 
+\begin{DoxyParams}{Parameters}
+{\em sz\+File\+Name} & file name of the file from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg} & message string to be logged \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Method\+Name} & the method name from where this function has been called \\
+\hline
+{\em sz\+Src\+Filename} & name of file which is getting procceses at the time of this function call \\
+\hline
+{\em nlog\+Dest} & which destination(file/database) the log message need to be logged \\
+\hline
+{\em use\+Param\+Destination} & boolean variable which says wether the log destination is passed in parameter or the dynamic config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{Log\+::log} 
+\end{DoxySeeAlso}
+
+
+Definition at line 136 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!init@{init}}
+\index{init@{init}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{init(const char $\ast$value)}{init(const char *value)}}]{\setlength{\rightskip}{0pt plus 5cm}void utils\+::\+Log\+::init (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a78fee29378f2064f9ee8299cb59d26ce}{}\label{classutils_1_1Log_a78fee29378f2064f9ee8299cb59d26ce}
+
+
+Deprecated methods (Remove as soon as possible) /////. 
+
+Initialise logging with the application id to be used to construct the log file 
+\begin{DoxyParams}{Parameters}
+{\em value} & application id from which the log call was made \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 298 of file Log.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classutils_1_1Log_a78fee29378f2064f9ee8299cb59d26ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!init@{init}}
+\index{init@{init}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{init(const char $\ast$logapp, const char $\ast$logdir, const Log\+Levels prio\+Lvl, const bool flag)}{init(const char *logapp, const char *logdir, const LogLevels prioLvl, const bool flag)}}]{\setlength{\rightskip}{0pt plus 5cm}void utils\+::\+Log\+::init (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{logapp, }
+\item[{const char $\ast$}]{logdir, }
+\item[{const {\bf Log\+Levels}}]{prio\+Lvl, }
+\item[{const bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a0a94150091c4d2768da2eac92006bdc7}{}\label{classutils_1_1Log_a0a94150091c4d2768da2eac92006bdc7}
+
+
+Definition at line 60 of file Log.\+cpp.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!init\+Done@{init\+Done}}
+\index{init\+Done@{init\+Done}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{init\+Done()}{initDone()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool utils\+::\+Log\+::init\+Done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a17b6d2bfbc21f2aa5af7815a1c2ca166}{}\label{classutils_1_1Log_a17b6d2bfbc21f2aa5af7815a1c2ca166}
+Checks to see if init called \begin{DoxyReturn}{Returns}
+true if initialise has been called, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!is\+Error\+Enabled@{is\+Error\+Enabled}}
+\index{is\+Error\+Enabled@{is\+Error\+Enabled}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{is\+Error\+Enabled()}{isErrorEnabled()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool utils\+::\+Log\+::is\+Error\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_ac8b80b98cd9f5de11e53980a873862a4}{}\label{classutils_1_1Log_ac8b80b98cd9f5de11e53980a873862a4}
+
+
+Definition at line 88 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!is\+Info\+Enabled@{is\+Info\+Enabled}}
+\index{is\+Info\+Enabled@{is\+Info\+Enabled}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{is\+Info\+Enabled()}{isInfoEnabled()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool utils\+::\+Log\+::is\+Info\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_af831fb2def9d0984c712ca6c73cf2cd8}{}\label{classutils_1_1Log_af831fb2def9d0984c712ca6c73cf2cd8}
+
+
+Definition at line 86 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!is\+Trace\+Enabled@{is\+Trace\+Enabled}}
+\index{is\+Trace\+Enabled@{is\+Trace\+Enabled}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{is\+Trace\+Enabled()}{isTraceEnabled()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool utils\+::\+Log\+::is\+Trace\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_ad5b43b0f5ea6a8b447407a33cda5a4bf}{}\label{classutils_1_1Log_ad5b43b0f5ea6a8b447407a33cda5a4bf}
+
+
+Definition at line 85 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!is\+Warn\+Enabled@{is\+Warn\+Enabled}}
+\index{is\+Warn\+Enabled@{is\+Warn\+Enabled}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{is\+Warn\+Enabled()}{isWarnEnabled()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool utils\+::\+Log\+::is\+Warn\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a99a23d525a51c3290f793dedadc65470}{}\label{classutils_1_1Log_a99a23d525a51c3290f793dedadc65470}
+
+
+Definition at line 87 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!log@{log}}
+\index{log@{log}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{log(\+Log\+Levels n\+Log\+Level, const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=\+N\+U\+L\+L, const char $\ast$sz\+Method\+Name=\+N\+U\+L\+L, const char $\ast$sz\+Src\+Filename=\+N\+U\+L\+L, Log\+::\+Log\+Dest nlog\+Dest=\+Log\+::\+F\+I\+L\+E, bool use\+Param\+Destination=false)}{log(LogLevels nLogLevel, const char *szFileName, const int nLineNumber, const char *szMsg, const char *szApplicationId=NULL, const char *szMethodName=NULL, const char *szSrcFilename=NULL, Log::LogDest nlogDest=Log::FILE, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void utils\+::\+Log\+::log (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\+Levels}}]{n\+Log\+Level, }
+\item[{const char $\ast$}]{sz\+File\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg, }
+\item[{const char $\ast$}]{sz\+Application\+Id = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Method\+Name = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Src\+Filename = {\ttfamily NULL}, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest = {\ttfamily {\bf Log\+::\+F\+I\+LE}}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{}\label{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}
+\hyperlink{classutils_1_1Log}{Log} a message to the defined output, if the levels are set such that this is required 
+\begin{DoxyParams}{Parameters}
+{\em n\+Log\+Level} & the filtering level assigned to this message \\
+\hline
+{\em sz\+File\+Name} & file name of the file from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg} & message string to be logged \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Method\+Name} & the method name from where this function has been called \\
+\hline
+{\em sz\+Src\+Filename} & name of file which is getting procceses at the time of this function call \\
+\hline
+{\em nlog\+Dest} & which destination(file/database) the log message need to be logged \\
+\hline
+{\em use\+Param\+Destination} & boolean variable which says wether the log destination is passed in parameter or the dynamic config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Log\+::log\+Message\+To\+File 
+
+Log\+::log\+Message\+To\+Db 
+\end{DoxySeeAlso}
+
+
+Definition at line 128 of file Log.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classutils_1_1Log_ae5616599185aa1a607c838caa150f760_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!log\+Elapsed\+Time@{log\+Elapsed\+Time}}
+\index{log\+Elapsed\+Time@{log\+Elapsed\+Time}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{log\+Elapsed\+Time(const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, const char $\ast$logname\+Override, Log\+::\+Log\+Dest nlog\+Dest, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0, bool elapsed\+Time\+Db\+Logging=false, bool use\+Param\+Destination=false)}{logElapsedTime(const char *szModuleName, const int nLineNumber, const char *szMsgFileName, const char *szDesc, const char *szCallId, const char *lognameOverride, Log::LogDest nlogDest, unsigned long &ulStartCall, unsigned long &ulInitial, int nTmMask, double dbAvgTm=0.0, bool elapsedTimeDbLogging=false, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::log\+Elapsed\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+Module\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg\+File\+Name, }
+\item[{const char $\ast$}]{sz\+Desc, }
+\item[{const char $\ast$}]{sz\+Call\+Id, }
+\item[{const char $\ast$}]{logname\+Override, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest, }
+\item[{unsigned long \&}]{ul\+Start\+Call, }
+\item[{unsigned long \&}]{ul\+Initial, }
+\item[{int}]{n\+Tm\+Mask, }
+\item[{double}]{db\+Avg\+Tm = {\ttfamily 0.0}, }
+\item[{bool}]{elapsed\+Time\+Db\+Logging = {\ttfamily false}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a3288f62f0edee03354f3c258aabccae3}{}\label{classutils_1_1Log_a3288f62f0edee03354f3c258aabccae3}
+Write the elapsed time log message to a file using the description 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Module\+Name} & file name of the code module from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg\+File\+Name} & file name of message being processed \\
+\hline
+{\em sz\+Desc} & message description \\
+\hline
+{\em sz\+Call\+Id} & name of method for which the elapsed time applies \\
+\hline
+{\em sz\+Logname\+Override} & Overrides the default logname with the specified logname \\
+\hline
+{\em ul\+Start\+Call} & starting time for call \\
+\hline
+{\em ul\+Initial} & initial starting time for current processing stage \\
+\hline
+{\em n\+Tm\+Mask} & Mask which determines whether to output elapsed time or not \\
+\hline
+{\em db\+Avg\+Tm} & Time to use for out of range calculations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_a3288f62f0edee03354f3c258aabccae3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!log\+Elapsed\+Time@{log\+Elapsed\+Time}}
+\index{log\+Elapsed\+Time@{log\+Elapsed\+Time}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{log\+Elapsed\+Time(const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0)}{logElapsedTime(const char *szModuleName, const int nLineNumber, const char *szMsgFileName, const char *szDesc, const char *szCallId, unsigned long &ulStartCall, unsigned long &ulInitial, int nTmMask, double dbAvgTm=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::log\+Elapsed\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+Module\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg\+File\+Name, }
+\item[{const char $\ast$}]{sz\+Desc, }
+\item[{const char $\ast$}]{sz\+Call\+Id, }
+\item[{unsigned long \&}]{ul\+Start\+Call, }
+\item[{unsigned long \&}]{ul\+Initial, }
+\item[{int}]{n\+Tm\+Mask, }
+\item[{double}]{db\+Avg\+Tm = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a42cc9a0f0ecd76abd678ebd7ac59d8d7}{}\label{classutils_1_1Log_a42cc9a0f0ecd76abd678ebd7ac59d8d7}
+Calls log\+Elapsed\+Time(...) with the following defaults 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Logname\+Override} & parameter defaulted to N\+U\+LL \\
+\hline
+{\em nlog\+Dest} & parameter defaulted to N\+O\+NE \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 233 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!log\+Elapsed\+Time@{log\+Elapsed\+Time}}
+\index{log\+Elapsed\+Time@{log\+Elapsed\+Time}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{log\+Elapsed\+Time(const char $\ast$sz\+Module\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg\+File\+Name, const char $\ast$sz\+Desc, const char $\ast$sz\+Call\+Id, Log\+::\+Log\+Dest nlog\+Dest, unsigned long \&ul\+Start\+Call, unsigned long \&ul\+Initial, int n\+Tm\+Mask, double db\+Avg\+Tm=0.\+0)}{logElapsedTime(const char *szModuleName, const int nLineNumber, const char *szMsgFileName, const char *szDesc, const char *szCallId, Log::LogDest nlogDest, unsigned long &ulStartCall, unsigned long &ulInitial, int nTmMask, double dbAvgTm=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::log\+Elapsed\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+Module\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg\+File\+Name, }
+\item[{const char $\ast$}]{sz\+Desc, }
+\item[{const char $\ast$}]{sz\+Call\+Id, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest, }
+\item[{unsigned long \&}]{ul\+Start\+Call, }
+\item[{unsigned long \&}]{ul\+Initial, }
+\item[{int}]{n\+Tm\+Mask, }
+\item[{double}]{db\+Avg\+Tm = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_ab7985810504b1e575a408a3fc14118d0}{}\label{classutils_1_1Log_ab7985810504b1e575a408a3fc14118d0}
+Calls log\+Elapsed\+Time(...) with the following defaults 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Logname\+Override} & parameter defaulted to N\+U\+LL \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 245 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!log\+Message\+To\+File@{log\+Message\+To\+File}}
+\index{log\+Message\+To\+File@{log\+Message\+To\+File}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{log\+Message\+To\+File()}{logMessageToFile()}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::log\+Message\+To\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_ac526c9aee25389e092ba27c5f5feb3e8}{}\label{classutils_1_1Log_ac526c9aee25389e092ba27c5f5feb3e8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_ac526c9aee25389e092ba27c5f5feb3e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!set\+Elapsed@{set\+Elapsed}}
+\index{set\+Elapsed@{set\+Elapsed}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{set\+Elapsed(char $\ast$value, int mask)}{setElapsed(char *value, int mask)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::set\+Elapsed (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{value, }
+\item[{int}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_aecbaeed2809b1cf54b5d78fbc9870ebe}{}\label{classutils_1_1Log_aecbaeed2809b1cf54b5d78fbc9870ebe}
+Initialise / reset elapsed data fields 
+\begin{DoxyParams}{Parameters}
+{\em value} & logname \\
+\hline
+{\em mask} & elapsed mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_aecbaeed2809b1cf54b5d78fbc9870ebe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!set\+Input\+Source\+File@{set\+Input\+Source\+File}}
+\index{set\+Input\+Source\+File@{set\+Input\+Source\+File}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{set\+Input\+Source\+File(std\+::string src\+File)}{setInputSourceFile(std::string srcFile)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::set\+Input\+Source\+File (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{src\+File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a0d68bc67c1342672dc265bf16149b119}{}\label{classutils_1_1Log_a0d68bc67c1342672dc265bf16149b119}
+
+
+Definition at line 349 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!set\+Log\+Destination@{set\+Log\+Destination}}
+\index{set\+Log\+Destination@{set\+Log\+Destination}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{set\+Log\+Destination(\+Log\+Dest dest)}{setLogDestination(LogDest dest)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::set\+Log\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf Log\+Dest}}]{dest}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a9bc0e1c6ce4e14943da1e94a36833b59}{}\label{classutils_1_1Log_a9bc0e1c6ce4e14943da1e94a36833b59}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classutils_1_1Log_a9bc0e1c6ce4e14943da1e94a36833b59_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!strip\+File\+Name@{strip\+File\+Name}}
+\index{strip\+File\+Name@{strip\+File\+Name}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{strip\+File\+Name(const std\+::string \&sz\+Original\+File\+Name, bool strip\+Ext\+Flag=false)}{stripFileName(const std::string &szOriginalFileName, bool stripExtFlag=false)}}]{\setlength{\rightskip}{0pt plus 5cm}const string utils\+::\+Log\+::strip\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{sz\+Original\+File\+Name, }
+\item[{bool}]{strip\+Ext\+Flag = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a20b001de07bd7b008126037bed0d1393}{}\label{classutils_1_1Log_a20b001de07bd7b008126037bed0d1393}
+Strip any path component off the file name 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Original\+File\+Name} & name of the source file generating this log message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Basename of the file 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file Log.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classutils_1_1Log_a20b001de07bd7b008126037bed0d1393_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{utils\+::\+Log@{utils\+::\+Log}!trace@{trace}}
+\index{trace@{trace}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{trace(const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=\+N\+U\+L\+L, const char $\ast$sz\+Method\+Name=\+N\+U\+L\+L, const char $\ast$sz\+Src\+Filename=\+N\+U\+L\+L, Log\+::\+Log\+Dest nlog\+Dest=\+Log\+::\+F\+I\+L\+E, bool use\+Param\+Destination=false)}{trace(const char *szFileName, const int nLineNumber, const char *szMsg, const char *szApplicationId=NULL, const char *szMethodName=NULL, const char *szSrcFilename=NULL, Log::LogDest nlogDest=Log::FILE, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::trace (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+File\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg, }
+\item[{const char $\ast$}]{sz\+Application\+Id = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Method\+Name = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Src\+Filename = {\ttfamily NULL}, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest = {\ttfamily {\bf Log\+::\+F\+I\+LE}}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_a37ae89eca0ad705c5e948710406e2054}{}\label{classutils_1_1Log_a37ae89eca0ad705c5e948710406e2054}
+Send a trace (debug) level message to the logging output with override for the application id 
+\begin{DoxyParams}{Parameters}
+{\em sz\+File\+Name} & file name of the file from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg} & message string to be logged \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Method\+Name} & the method name from where this function has been called \\
+\hline
+{\em sz\+Src\+Filename} & name of file which is getting procceses at the time of this function call \\
+\hline
+{\em nlog\+Dest} & which destination(file/database) the log message need to be logged \\
+\hline
+{\em use\+Param\+Destination} & boolean variable which says wether the log destination is passed in parameter or the dynamic config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{Log\+::log} 
+\end{DoxySeeAlso}
+
+
+Definition at line 119 of file Log.\+h.
+
+\index{utils\+::\+Log@{utils\+::\+Log}!warn@{warn}}
+\index{warn@{warn}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{warn(const char $\ast$sz\+File\+Name, const int n\+Line\+Number, const char $\ast$sz\+Msg, const char $\ast$sz\+Application\+Id=\+N\+U\+L\+L, const char $\ast$sz\+Method\+Name=\+N\+U\+L\+L, const char $\ast$sz\+Src\+Filename=\+N\+U\+L\+L, Log\+::\+Log\+Dest nlog\+Dest=\+Log\+::\+F\+I\+L\+E, bool use\+Param\+Destination=false)}{warn(const char *szFileName, const int nLineNumber, const char *szMsg, const char *szApplicationId=NULL, const char *szMethodName=NULL, const char *szSrcFilename=NULL, Log::LogDest nlogDest=Log::FILE, bool useParamDestination=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static void utils\+::\+Log\+::warn (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\+File\+Name, }
+\item[{const int}]{n\+Line\+Number, }
+\item[{const char $\ast$}]{sz\+Msg, }
+\item[{const char $\ast$}]{sz\+Application\+Id = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Method\+Name = {\ttfamily NULL}, }
+\item[{const char $\ast$}]{sz\+Src\+Filename = {\ttfamily NULL}, }
+\item[{{\bf Log\+::\+Log\+Dest}}]{nlog\+Dest = {\ttfamily {\bf Log\+::\+F\+I\+LE}}, }
+\item[{bool}]{use\+Param\+Destination = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classutils_1_1Log_aaff384f2d48d78b72b9c5e72ebed18db}{}\label{classutils_1_1Log_aaff384f2d48d78b72b9c5e72ebed18db}
+Send a warning message to the logging output -\/ recoverable error condition 
+\begin{DoxyParams}{Parameters}
+{\em sz\+File\+Name} & file name of the file from which the log call was made \\
+\hline
+{\em n\+Line\+Number} & line number within the source file \\
+\hline
+{\em sz\+Msg} & message string to be logged \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Application\+Id} & application id from which the log call was made (used to construct log file name). Defaults to value set on init \\
+\hline
+{\em sz\+Method\+Name} & the method name from where this function has been called \\
+\hline
+{\em sz\+Src\+Filename} & name of file which is getting procceses at the time of this function call \\
+\hline
+{\em nlog\+Dest} & which destination(file/database) the log message need to be logged \\
+\hline
+{\em use\+Param\+Destination} & boolean variable which says wether the log destination is passed in parameter or the dynamic config variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classutils_1_1Log_ae5616599185aa1a607c838caa150f760}{Log\+::log} 
+\end{DoxySeeAlso}
+
+
+Definition at line 153 of file Log.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{utils\+::\+Log@{utils\+::\+Log}!D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME}!utils\+::\+Log@{utils\+::\+Log}}
+\subsubsection[{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME}{DEFAULT_LOG_FILENAME}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string utils\+::\+Log\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+ME = \char`\"{}/tmp/hcu\+\_\+error.\+log\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classutils_1_1Log_a887edb129af7794c19cf05ade96f892d}{}\label{classutils_1_1Log_a887edb129af7794c19cf05ade96f892d}
+
+
+Definition at line 266 of file Log.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+L\+O\+G/\hyperlink{Log_8h}{Log.\+h}\item 
+L\+O\+G/\hyperlink{Log_8cpp}{Log.\+cpp}\end{DoxyCompactItemize}

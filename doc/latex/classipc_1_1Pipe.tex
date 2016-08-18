@@ -1,0 +1,160 @@
+\hypertarget{classipc_1_1Pipe}{}\section{ipc\+:\+:Pipe Class Reference}
+\label{classipc_1_1Pipe}\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+
+
+{\ttfamily \#include $<$Pipe.\+h$>$}
+
+
+
+Inheritance diagram for ipc\+:\+:Pipe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classipc_1_1Pipe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ipc\+:\+:Pipe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classipc_1_1Pipe__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1Pipe_a91ddad07e89d5585b1cf27fa7860e201}{Pipe} ()
+\item 
+virtual \hyperlink{classipc_1_1Pipe_af4519cc3f1f13857a724db7b2220eefa}{$\sim$\+Pipe} ()
+\item 
+void \hyperlink{classipc_1_1Pipe_adbae487d0da061626a372cf4b8dd9b39}{initialize} (string str\+Name=\char`\"{}\char`\"{})
+\item 
+Emp\+Full\+Message $\ast$ \hyperlink{classipc_1_1Pipe_ac48948dba8e24c66d85c54594a813065}{read\+Data} ()
+\item 
+void \hyperlink{classipc_1_1Pipe_aa9d1114a883aef079d9f0d8d11fdd377}{write\+Data} (Emp\+Full\+Message $\ast$message)
+\item 
+void \hyperlink{classipc_1_1Pipe_a3f1de71c9add87611319d2838404dce3}{destroy} ()
+\item 
+bool \hyperlink{classipc_1_1Pipe_ab3c27bf2a9319b329f6fa380ec60d5f1}{get\+Current\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Pipe.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!Pipe@{Pipe}}
+\index{Pipe@{Pipe}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{Pipe()}{Pipe()}}]{\setlength{\rightskip}{0pt plus 5cm}Pipe\+::\+Pipe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1Pipe_a91ddad07e89d5585b1cf27fa7860e201}{}\label{classipc_1_1Pipe_a91ddad07e89d5585b1cf27fa7860e201}
+
+
+Definition at line 24 of file Pipe.\+cpp.
+
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!````~Pipe@{$\sim$\+Pipe}}
+\index{````~Pipe@{$\sim$\+Pipe}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pipe()}{~Pipe()}}]{\setlength{\rightskip}{0pt plus 5cm}Pipe\+::$\sim$\+Pipe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_af4519cc3f1f13857a724db7b2220eefa}{}\label{classipc_1_1Pipe_af4519cc3f1f13857a724db7b2220eefa}
+
+
+Definition at line 34 of file Pipe.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!destroy@{destroy}}
+\index{destroy@{destroy}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{destroy()}{destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pipe\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_a3f1de71c9add87611319d2838404dce3}{}\label{classipc_1_1Pipe_a3f1de71c9add87611319d2838404dce3}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a8d30be1048be238f4cef3240bfca143d}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 181 of file Pipe.\+cpp.
+
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!get\+Current\+State@{get\+Current\+State}}
+\index{get\+Current\+State@{get\+Current\+State}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{get\+Current\+State()}{getCurrentState()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pipe\+::get\+Current\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_ab3c27bf2a9319b329f6fa380ec60d5f1}{}\label{classipc_1_1Pipe_ab3c27bf2a9319b329f6fa380ec60d5f1}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a06f4cd9d1be23823c1f772da48779b58}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 185 of file Pipe.\+cpp.
+
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!initialize@{initialize}}
+\index{initialize@{initialize}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{initialize(string str\+Name="""")}{initialize(string strName="")}}]{\setlength{\rightskip}{0pt plus 5cm}void Pipe\+::initialize (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+Name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_adbae487d0da061626a372cf4b8dd9b39}{}\label{classipc_1_1Pipe_adbae487d0da061626a372cf4b8dd9b39}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a3a0ed19000bba31336d9e2d3f23e9e88}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 44 of file Pipe.\+cpp.
+
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{read\+Data()}{readData()}}]{\setlength{\rightskip}{0pt plus 5cm}Emp\+Full\+Message $\ast$ Pipe\+::read\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_ac48948dba8e24c66d85c54594a813065}{}\label{classipc_1_1Pipe_ac48948dba8e24c66d85c54594a813065}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a6617ccd3bd8d8d314292db6ef3c9e7d5}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 86 of file Pipe.\+cpp.
+
+\index{ipc\+::\+Pipe@{ipc\+::\+Pipe}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!ipc\+::\+Pipe@{ipc\+::\+Pipe}}
+\subsubsection[{\texorpdfstring{write\+Data(\+Emp\+Full\+Message $\ast$message)}{writeData(EmpFullMessage *message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Pipe\+::write\+Data (
+\begin{DoxyParamCaption}
+\item[{Emp\+Full\+Message $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1Pipe_aa9d1114a883aef079d9f0d8d11fdd377}{}\label{classipc_1_1Pipe_aa9d1114a883aef079d9f0d8d11fdd377}
+
+
+Implements \hyperlink{classipc_1_1EndPoint_a3dfd16e4b75e507f8c5fe9961934aa37}{ipc\+::\+End\+Point}.
+
+
+
+Definition at line 150 of file Pipe.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+I\+P\+C\+\_\+\+P\+I\+P\+E/\hyperlink{Pipe_8h}{Pipe.\+h}\item 
+I\+P\+C\+\_\+\+P\+I\+P\+E/\hyperlink{Pipe_8cpp}{Pipe.\+cpp}\end{DoxyCompactItemize}

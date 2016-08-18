@@ -1,0 +1,138 @@
+\hypertarget{classipc_1_1EndPointFactory}{}\section{ipc\+:\+:End\+Point\+Factory Class Reference}
+\label{classipc_1_1EndPointFactory}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}
+
+
+{\ttfamily \#include $<$End\+Point\+Factory.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04}{End\+Point\+Type} \{ \\*
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04ab4f2febf223e7103da442bcfe346789e}{I\+P\+C\+\_\+\+P\+I\+PE}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04aed25e2f8890e6f5c9a8b9b7215e378c0}{I\+P\+C\+\_\+\+F\+I\+FO}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a8fa11a5e2ed1da22c16c97c530938cfa}{I\+P\+C\+\_\+\+SM}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a07dfcba7770e093e86cb7e5fb5152827}{I\+P\+C\+\_\+\+MQ}, 
+\\*
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a1e79496cd773f3410e261313944bf341}{I\+P\+C\+\_\+\+FL}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04af75cb0d4978f6067d53e887816c54c1c}{T\+C\+P\+\_\+\+IP}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a53908264697bf3f606c27b77728dc80d}{I\+P\+C\+\_\+\+U\+DS}, 
+\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a4aef5054db3eecc660ec639e68b1346d}{E\+M\+P\+\_\+\+C\+L\+A\+S\+SD}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1EndPoint}{End\+Point} $\ast$ \hyperlink{classipc_1_1EndPointFactory_a033e956410419b063d5074f4cd541048}{create\+End\+Point\+Instance} (\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04}{End\+Point\+Factory\+::\+End\+Point\+Type} end\+Point\+Type)
+\item 
+\hyperlink{classipc_1_1SocketEndPoint}{Socket\+End\+Point} $\ast$ \hyperlink{classipc_1_1EndPointFactory_a88cee65bcd3d20262fc289e0c61c1b2e}{create\+Socket\+End\+Point\+Instance} (\hyperlink{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04}{End\+Point\+Factory\+::\+End\+Point\+Type} end\+Point\+Type, \hyperlink{classipc_1_1EndPoint_adcdf30d3a61d3d342529b1fb8b0bbd72}{End\+Point\+::\+Protocol\+Type} protocol\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classipc_1_1EndPointFactory}{End\+Point\+Factory} $\ast$ \hyperlink{classipc_1_1EndPointFactory_a73f3fb990f682beeff892b65cf91a35b}{get\+End\+Point\+Factory} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file End\+Point\+Factory.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!End\+Point\+Type@{End\+Point\+Type}}
+\index{End\+Point\+Type@{End\+Point\+Type}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}
+\subsubsection[{\texorpdfstring{End\+Point\+Type}{EndPointType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ipc\+::\+End\+Point\+Factory\+::\+End\+Point\+Type}}\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\+P\+C\+\_\+\+P\+I\+PE@{I\+P\+C\+\_\+\+P\+I\+PE}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+P\+I\+PE@{I\+P\+C\+\_\+\+P\+I\+PE}}\item[{\em 
+I\+P\+C\+\_\+\+P\+I\+PE\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04ab4f2febf223e7103da442bcfe346789e}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04ab4f2febf223e7103da442bcfe346789e}
+}]\index{I\+P\+C\+\_\+\+F\+I\+FO@{I\+P\+C\+\_\+\+F\+I\+FO}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+F\+I\+FO@{I\+P\+C\+\_\+\+F\+I\+FO}}\item[{\em 
+I\+P\+C\+\_\+\+F\+I\+FO\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04aed25e2f8890e6f5c9a8b9b7215e378c0}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04aed25e2f8890e6f5c9a8b9b7215e378c0}
+}]\index{I\+P\+C\+\_\+\+SM@{I\+P\+C\+\_\+\+SM}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+SM@{I\+P\+C\+\_\+\+SM}}\item[{\em 
+I\+P\+C\+\_\+\+SM\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a8fa11a5e2ed1da22c16c97c530938cfa}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a8fa11a5e2ed1da22c16c97c530938cfa}
+}]\index{I\+P\+C\+\_\+\+MQ@{I\+P\+C\+\_\+\+MQ}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+MQ@{I\+P\+C\+\_\+\+MQ}}\item[{\em 
+I\+P\+C\+\_\+\+MQ\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a07dfcba7770e093e86cb7e5fb5152827}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a07dfcba7770e093e86cb7e5fb5152827}
+}]\index{I\+P\+C\+\_\+\+FL@{I\+P\+C\+\_\+\+FL}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+FL@{I\+P\+C\+\_\+\+FL}}\item[{\em 
+I\+P\+C\+\_\+\+FL\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a1e79496cd773f3410e261313944bf341}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a1e79496cd773f3410e261313944bf341}
+}]\index{T\+C\+P\+\_\+\+IP@{T\+C\+P\+\_\+\+IP}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!T\+C\+P\+\_\+\+IP@{T\+C\+P\+\_\+\+IP}}\item[{\em 
+T\+C\+P\+\_\+\+IP\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04af75cb0d4978f6067d53e887816c54c1c}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04af75cb0d4978f6067d53e887816c54c1c}
+}]\index{I\+P\+C\+\_\+\+U\+DS@{I\+P\+C\+\_\+\+U\+DS}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!I\+P\+C\+\_\+\+U\+DS@{I\+P\+C\+\_\+\+U\+DS}}\item[{\em 
+I\+P\+C\+\_\+\+U\+DS\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a53908264697bf3f606c27b77728dc80d}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a53908264697bf3f606c27b77728dc80d}
+}]\index{E\+M\+P\+\_\+\+C\+L\+A\+S\+SD@{E\+M\+P\+\_\+\+C\+L\+A\+S\+SD}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!E\+M\+P\+\_\+\+C\+L\+A\+S\+SD@{E\+M\+P\+\_\+\+C\+L\+A\+S\+SD}}\item[{\em 
+E\+M\+P\+\_\+\+C\+L\+A\+S\+SD\hypertarget{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a4aef5054db3eecc660ec639e68b1346d}{}\label{classipc_1_1EndPointFactory_a436d6caf00a27aa28ca00bf116edca04a4aef5054db3eecc660ec639e68b1346d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 21 of file End\+Point\+Factory.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!create\+End\+Point\+Instance@{create\+End\+Point\+Instance}}
+\index{create\+End\+Point\+Instance@{create\+End\+Point\+Instance}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}
+\subsubsection[{\texorpdfstring{create\+End\+Point\+Instance(\+End\+Point\+Factory\+::\+End\+Point\+Type end\+Point\+Type)}{createEndPointInstance(EndPointFactory::EndPointType endPointType)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point} $\ast$ End\+Point\+Factory\+::create\+End\+Point\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf End\+Point\+Factory\+::\+End\+Point\+Type}}]{end\+Point\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1EndPointFactory_a033e956410419b063d5074f4cd541048}{}\label{classipc_1_1EndPointFactory_a033e956410419b063d5074f4cd541048}
+
+
+Definition at line 32 of file End\+Point\+Factory.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classipc_1_1EndPointFactory_a033e956410419b063d5074f4cd541048_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!create\+Socket\+End\+Point\+Instance@{create\+Socket\+End\+Point\+Instance}}
+\index{create\+Socket\+End\+Point\+Instance@{create\+Socket\+End\+Point\+Instance}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}
+\subsubsection[{\texorpdfstring{create\+Socket\+End\+Point\+Instance(\+End\+Point\+Factory\+::\+End\+Point\+Type end\+Point\+Type, End\+Point\+::\+Protocol\+Type protocol\+Type)}{createSocketEndPointInstance(EndPointFactory::EndPointType endPointType, EndPoint::ProtocolType protocolType)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Socket\+End\+Point} $\ast$ End\+Point\+Factory\+::create\+Socket\+End\+Point\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf End\+Point\+Factory\+::\+End\+Point\+Type}}]{end\+Point\+Type, }
+\item[{{\bf End\+Point\+::\+Protocol\+Type}}]{protocol\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1EndPointFactory_a88cee65bcd3d20262fc289e0c61c1b2e}{}\label{classipc_1_1EndPointFactory_a88cee65bcd3d20262fc289e0c61c1b2e}
+
+
+Definition at line 62 of file End\+Point\+Factory.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classipc_1_1EndPointFactory_a88cee65bcd3d20262fc289e0c61c1b2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}!get\+End\+Point\+Factory@{get\+End\+Point\+Factory}}
+\index{get\+End\+Point\+Factory@{get\+End\+Point\+Factory}!ipc\+::\+End\+Point\+Factory@{ipc\+::\+End\+Point\+Factory}}
+\subsubsection[{\texorpdfstring{get\+End\+Point\+Factory()}{getEndPointFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point\+Factory} $\ast$ End\+Point\+Factory\+::get\+End\+Point\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classipc_1_1EndPointFactory_a73f3fb990f682beeff892b65cf91a35b}{}\label{classipc_1_1EndPointFactory_a73f3fb990f682beeff892b65cf91a35b}
+
+
+Definition at line 25 of file End\+Point\+Factory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+O\+M\+M\+O\+N/\hyperlink{EndPointFactory_8h}{End\+Point\+Factory.\+h}\item 
+C\+O\+M\+M\+O\+N/\hyperlink{EndPointFactory_8cpp}{End\+Point\+Factory.\+cpp}\end{DoxyCompactItemize}

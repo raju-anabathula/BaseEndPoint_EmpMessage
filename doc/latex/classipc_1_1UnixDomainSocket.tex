@@ -1,0 +1,306 @@
+\hypertarget{classipc_1_1UnixDomainSocket}{}\section{ipc\+:\+:Unix\+Domain\+Socket Class Reference}
+\label{classipc_1_1UnixDomainSocket}\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+
+
+{\ttfamily \#include $<$Unix\+Domain\+Socket.\+h$>$}
+
+
+
+Inheritance diagram for ipc\+:\+:Unix\+Domain\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classipc_1_1UnixDomainSocket__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ipc\+:\+:Unix\+Domain\+Socket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classipc_1_1UnixDomainSocket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1UnixDomainSocket_a9d87b6cfaa62cf9fa8d64ed533001753}{Unix\+Domain\+Socket} ()
+\item 
+\hyperlink{classipc_1_1UnixDomainSocket_a10ab8e00efe147e7f313a1298113244a}{Unix\+Domain\+Socket} (\hyperlink{classipc_1_1EndPoint_adcdf30d3a61d3d342529b1fb8b0bbd72}{End\+Point\+::\+Protocol\+Type} protocol\+Type)
+\item 
+virtual \hyperlink{classipc_1_1UnixDomainSocket_a77a7af339ff0c934d90586d124244e7b}{$\sim$\+Unix\+Domain\+Socket} ()
+\item 
+Emp\+Full\+Message $\ast$ \hyperlink{classipc_1_1UnixDomainSocket_a694233d63430495b4ecbc5c5b59c01e4}{read\+Data} ()
+\item 
+void \hyperlink{classipc_1_1UnixDomainSocket_aff0368529a5eebb701e4689213880a97}{write\+Data} (Emp\+Full\+Message $\ast$message)
+\item 
+void \hyperlink{classipc_1_1UnixDomainSocket_ae8e7915608903f74300a9f626bdb3d3f}{destroy} ()
+\item 
+int \hyperlink{classipc_1_1UnixDomainSocket_ae1d8cecdd27269a77969b128e2f70774}{initialize\+Socket} ()
+\item 
+bool \hyperlink{classipc_1_1UnixDomainSocket_acaf4e80b5d2e0069c0347cb7ad69b279}{connect\+To\+Server} ()
+\item 
+bool \hyperlink{classipc_1_1UnixDomainSocket_a5dddd0aef5c2184843f573c19156ba37}{bind\+Socket} ()
+\item 
+int \hyperlink{classipc_1_1UnixDomainSocket_a381d1f377da1a980bddfde2abb577bf0}{accept\+Request} ()
+\item 
+bool \hyperlink{classipc_1_1UnixDomainSocket_a2887b754b2b26b7c4c947aa27a8a75c8}{listen\+Socket} ()
+\item 
+void \hyperlink{classipc_1_1UnixDomainSocket_abbb0ec8d20157b203eee0eabcda81ec9}{set\+Non\+Blocking} (int socket\+FD)
+\item 
+bool \hyperlink{classipc_1_1UnixDomainSocket_a7fc2dceda50345568051d849c1c396dd}{get\+Current\+State} ()
+\item 
+ssize\+\_\+t \hyperlink{classipc_1_1UnixDomainSocket_aa3495bc1d20aaf30d80c14b3fb85f35c}{read\+From\+FD} (int fd, boost\+::uint8\+\_\+t $\ast$buffer, size\+\_\+t size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classipc_1_1UnixDomainSocket_a2a7e269ee896e8ca6fc4400c28d22f46}{m\+\_\+total\+Bytes\+Read}
+\item 
+size\+\_\+t \hyperlink{classipc_1_1UnixDomainSocket_a93a554cd7a8c2ef97e22a4e5a28f2191}{m\+\_\+bytes\+Allocated}
+\item 
+size\+\_\+t \hyperlink{classipc_1_1UnixDomainSocket_a232d748cd70ad72d18d746a9b8ccf537}{m\+\_\+buffer\+Size}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file Unix\+Domain\+Socket.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!Unix\+Domain\+Socket@{Unix\+Domain\+Socket}}
+\index{Unix\+Domain\+Socket@{Unix\+Domain\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{Unix\+Domain\+Socket()}{UnixDomainSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}Unix\+Domain\+Socket\+::\+Unix\+Domain\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1UnixDomainSocket_a9d87b6cfaa62cf9fa8d64ed533001753}{}\label{classipc_1_1UnixDomainSocket_a9d87b6cfaa62cf9fa8d64ed533001753}
+
+
+Definition at line 25 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!Unix\+Domain\+Socket@{Unix\+Domain\+Socket}}
+\index{Unix\+Domain\+Socket@{Unix\+Domain\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{Unix\+Domain\+Socket(\+End\+Point\+::\+Protocol\+Type protocol\+Type)}{UnixDomainSocket(EndPoint::ProtocolType protocolType)}}]{\setlength{\rightskip}{0pt plus 5cm}Unix\+Domain\+Socket\+::\+Unix\+Domain\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf End\+Point\+::\+Protocol\+Type}}]{protocol\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1UnixDomainSocket_a10ab8e00efe147e7f313a1298113244a}{}\label{classipc_1_1UnixDomainSocket_a10ab8e00efe147e7f313a1298113244a}
+
+
+Definition at line 31 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!````~Unix\+Domain\+Socket@{$\sim$\+Unix\+Domain\+Socket}}
+\index{````~Unix\+Domain\+Socket@{$\sim$\+Unix\+Domain\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{$\sim$\+Unix\+Domain\+Socket()}{~UnixDomainSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}Unix\+Domain\+Socket\+::$\sim$\+Unix\+Domain\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a77a7af339ff0c934d90586d124244e7b}{}\label{classipc_1_1UnixDomainSocket_a77a7af339ff0c934d90586d124244e7b}
+
+
+Definition at line 51 of file Unix\+Domain\+Socket.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!accept\+Request@{accept\+Request}}
+\index{accept\+Request@{accept\+Request}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{accept\+Request()}{acceptRequest()}}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\+Domain\+Socket\+::accept\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a381d1f377da1a980bddfde2abb577bf0}{}\label{classipc_1_1UnixDomainSocket_a381d1f377da1a980bddfde2abb577bf0}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_ab025dab15878d325d0932f0b813e31f4}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 146 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!bind\+Socket@{bind\+Socket}}
+\index{bind\+Socket@{bind\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{bind\+Socket()}{bindSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unix\+Domain\+Socket\+::bind\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a5dddd0aef5c2184843f573c19156ba37}{}\label{classipc_1_1UnixDomainSocket_a5dddd0aef5c2184843f573c19156ba37}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a6de9aa716acefb344ddc566df4c1628d}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 128 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!connect\+To\+Server@{connect\+To\+Server}}
+\index{connect\+To\+Server@{connect\+To\+Server}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{connect\+To\+Server()}{connectToServer()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unix\+Domain\+Socket\+::connect\+To\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_acaf4e80b5d2e0069c0347cb7ad69b279}{}\label{classipc_1_1UnixDomainSocket_acaf4e80b5d2e0069c0347cb7ad69b279}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a81b916a8e92b383afa9d0bb85a76e364}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 112 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!destroy@{destroy}}
+\index{destroy@{destroy}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{destroy()}{destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void Unix\+Domain\+Socket\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_ae8e7915608903f74300a9f626bdb3d3f}{}\label{classipc_1_1UnixDomainSocket_ae8e7915608903f74300a9f626bdb3d3f}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a65dba66f56f769ae7b424cb40dd2cf5b}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 346 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!get\+Current\+State@{get\+Current\+State}}
+\index{get\+Current\+State@{get\+Current\+State}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{get\+Current\+State()}{getCurrentState()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unix\+Domain\+Socket\+::get\+Current\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a7fc2dceda50345568051d849c1c396dd}{}\label{classipc_1_1UnixDomainSocket_a7fc2dceda50345568051d849c1c396dd}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a3c86a15ac04aa3fe9480b4f6c7b09ae3}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 353 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!initialize\+Socket@{initialize\+Socket}}
+\index{initialize\+Socket@{initialize\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{initialize\+Socket()}{initializeSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}int Unix\+Domain\+Socket\+::initialize\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_ae1d8cecdd27269a77969b128e2f70774}{}\label{classipc_1_1UnixDomainSocket_ae1d8cecdd27269a77969b128e2f70774}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a84ded69d1b4d517aaefceeee03fe0846}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 63 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!listen\+Socket@{listen\+Socket}}
+\index{listen\+Socket@{listen\+Socket}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{listen\+Socket()}{listenSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Unix\+Domain\+Socket\+::listen\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a2887b754b2b26b7c4c947aa27a8a75c8}{}\label{classipc_1_1UnixDomainSocket_a2887b754b2b26b7c4c947aa27a8a75c8}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_a4e1ada6c59c1fc4b8d2a75e5939f06e5}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 168 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{read\+Data()}{readData()}}]{\setlength{\rightskip}{0pt plus 5cm}Emp\+Full\+Message $\ast$ Unix\+Domain\+Socket\+::read\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_a694233d63430495b4ecbc5c5b59c01e4}{}\label{classipc_1_1UnixDomainSocket_a694233d63430495b4ecbc5c5b59c01e4}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_ac626b7166cdda6bc1434d897c335e6b8}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 228 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!read\+From\+FD@{read\+From\+FD}}
+\index{read\+From\+FD@{read\+From\+FD}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{read\+From\+F\+D(int fd, boost\+::uint8\+\_\+t $\ast$buffer, size\+\_\+t size)}{readFromFD(int fd, boost::uint8_t *buffer, size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}ssize\+\_\+t Unix\+Domain\+Socket\+::read\+From\+FD (
+\begin{DoxyParamCaption}
+\item[{int}]{fd, }
+\item[{boost\+::uint8\+\_\+t $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1UnixDomainSocket_aa3495bc1d20aaf30d80c14b3fb85f35c}{}\label{classipc_1_1UnixDomainSocket_aa3495bc1d20aaf30d80c14b3fb85f35c}
+
+
+Definition at line 197 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!set\+Non\+Blocking@{set\+Non\+Blocking}}
+\index{set\+Non\+Blocking@{set\+Non\+Blocking}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{set\+Non\+Blocking(int socket\+F\+D)}{setNonBlocking(int socketFD)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unix\+Domain\+Socket\+::set\+Non\+Blocking (
+\begin{DoxyParamCaption}
+\item[{int}]{socket\+FD}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_abbb0ec8d20157b203eee0eabcda81ec9}{}\label{classipc_1_1UnixDomainSocket_abbb0ec8d20157b203eee0eabcda81ec9}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_adacb2194fa63c2eff027c094b4958997}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 192 of file Unix\+Domain\+Socket.\+cpp.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{write\+Data(\+Emp\+Full\+Message $\ast$message)}{writeData(EmpFullMessage *message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Unix\+Domain\+Socket\+::write\+Data (
+\begin{DoxyParamCaption}
+\item[{Emp\+Full\+Message $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1UnixDomainSocket_aff0368529a5eebb701e4689213880a97}{}\label{classipc_1_1UnixDomainSocket_aff0368529a5eebb701e4689213880a97}
+
+
+Implements \hyperlink{classipc_1_1SocketEndPoint_ad487a279c5f3456e241a71f4b37173a1}{ipc\+::\+Socket\+End\+Point}.
+
+
+
+Definition at line 310 of file Unix\+Domain\+Socket.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!m\+\_\+buffer\+Size@{m\+\_\+buffer\+Size}}
+\index{m\+\_\+buffer\+Size@{m\+\_\+buffer\+Size}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{m\+\_\+buffer\+Size}{m_bufferSize}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t ipc\+::\+Unix\+Domain\+Socket\+::m\+\_\+buffer\+Size}\hypertarget{classipc_1_1UnixDomainSocket_a232d748cd70ad72d18d746a9b8ccf537}{}\label{classipc_1_1UnixDomainSocket_a232d748cd70ad72d18d746a9b8ccf537}
+
+
+Definition at line 129 of file Unix\+Domain\+Socket.\+h.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!m\+\_\+bytes\+Allocated@{m\+\_\+bytes\+Allocated}}
+\index{m\+\_\+bytes\+Allocated@{m\+\_\+bytes\+Allocated}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{m\+\_\+bytes\+Allocated}{m_bytesAllocated}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t ipc\+::\+Unix\+Domain\+Socket\+::m\+\_\+bytes\+Allocated}\hypertarget{classipc_1_1UnixDomainSocket_a93a554cd7a8c2ef97e22a4e5a28f2191}{}\label{classipc_1_1UnixDomainSocket_a93a554cd7a8c2ef97e22a4e5a28f2191}
+
+
+Definition at line 128 of file Unix\+Domain\+Socket.\+h.
+
+\index{ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}!m\+\_\+total\+Bytes\+Read@{m\+\_\+total\+Bytes\+Read}}
+\index{m\+\_\+total\+Bytes\+Read@{m\+\_\+total\+Bytes\+Read}!ipc\+::\+Unix\+Domain\+Socket@{ipc\+::\+Unix\+Domain\+Socket}}
+\subsubsection[{\texorpdfstring{m\+\_\+total\+Bytes\+Read}{m_totalBytesRead}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t ipc\+::\+Unix\+Domain\+Socket\+::m\+\_\+total\+Bytes\+Read}\hypertarget{classipc_1_1UnixDomainSocket_a2a7e269ee896e8ca6fc4400c28d22f46}{}\label{classipc_1_1UnixDomainSocket_a2a7e269ee896e8ca6fc4400c28d22f46}
+
+
+Definition at line 127 of file Unix\+Domain\+Socket.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+I\+P\+C\+\_\+\+U\+D\+S/\hyperlink{UnixDomainSocket_8h}{Unix\+Domain\+Socket.\+h}\item 
+I\+P\+C\+\_\+\+U\+D\+S/\hyperlink{UnixDomainSocket_8cpp}{Unix\+Domain\+Socket.\+cpp}\end{DoxyCompactItemize}

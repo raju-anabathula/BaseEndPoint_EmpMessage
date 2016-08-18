@@ -1,0 +1,314 @@
+\hypertarget{classipc_1_1SocketEndPoint}{}\section{ipc\+:\+:Socket\+End\+Point Class Reference}
+\label{classipc_1_1SocketEndPoint}\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+
+
+{\ttfamily \#include $<$Socket\+End\+Point.\+h$>$}
+
+
+
+Inheritance diagram for ipc\+:\+:Socket\+End\+Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classipc_1_1SocketEndPoint__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1SocketEndPoint_a24700cf1faa9804dd9959ce1f25bd1b4}{Socket\+End\+Point} ()
+\item 
+virtual \hyperlink{classipc_1_1SocketEndPoint_a9c99d24a44f871ce8a69b5220e381855}{$\sim$\+Socket\+End\+Point} ()
+\item 
+virtual int \hyperlink{classipc_1_1SocketEndPoint_a84ded69d1b4d517aaefceeee03fe0846}{initialize\+Socket} ()=0
+\item 
+virtual bool \hyperlink{classipc_1_1SocketEndPoint_a81b916a8e92b383afa9d0bb85a76e364}{connect\+To\+Server} ()=0
+\item 
+virtual bool \hyperlink{classipc_1_1SocketEndPoint_a6de9aa716acefb344ddc566df4c1628d}{bind\+Socket} ()=0
+\item 
+virtual bool \hyperlink{classipc_1_1SocketEndPoint_a4e1ada6c59c1fc4b8d2a75e5939f06e5}{listen\+Socket} ()=0
+\item 
+virtual int \hyperlink{classipc_1_1SocketEndPoint_ab025dab15878d325d0932f0b813e31f4}{accept\+Request} ()=0
+\item 
+virtual Emp\+Full\+Message $\ast$ \hyperlink{classipc_1_1SocketEndPoint_ac626b7166cdda6bc1434d897c335e6b8}{read\+Data} ()=0
+\item 
+virtual void \hyperlink{classipc_1_1SocketEndPoint_ad487a279c5f3456e241a71f4b37173a1}{write\+Data} (Emp\+Full\+Message $\ast$message)=0
+\item 
+virtual void \hyperlink{classipc_1_1SocketEndPoint_adacb2194fa63c2eff027c094b4958997}{set\+Non\+Blocking} (int socket\+FD)=0
+\item 
+virtual void \hyperlink{classipc_1_1SocketEndPoint_a65dba66f56f769ae7b424cb40dd2cf5b}{destroy} ()=0
+\item 
+virtual bool \hyperlink{classipc_1_1SocketEndPoint_a3c86a15ac04aa3fe9480b4f6c7b09ae3}{get\+Current\+State} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classipc_1_1SocketEndPoint_a637ace8f8872aa88463405ac95561578}{init\+Config\+Items} (string sz\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Socket\+End\+Point.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!Socket\+End\+Point@{Socket\+End\+Point}}
+\index{Socket\+End\+Point@{Socket\+End\+Point}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{Socket\+End\+Point()}{SocketEndPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}Socket\+End\+Point\+::\+Socket\+End\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classipc_1_1SocketEndPoint_a24700cf1faa9804dd9959ce1f25bd1b4}{}\label{classipc_1_1SocketEndPoint_a24700cf1faa9804dd9959ce1f25bd1b4}
+
+
+Definition at line 14 of file Socket\+End\+Point.\+cpp.
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!````~Socket\+End\+Point@{$\sim$\+Socket\+End\+Point}}
+\index{````~Socket\+End\+Point@{$\sim$\+Socket\+End\+Point}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{$\sim$\+Socket\+End\+Point()}{~SocketEndPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}Socket\+End\+Point\+::$\sim$\+Socket\+End\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a9c99d24a44f871ce8a69b5220e381855}{}\label{classipc_1_1SocketEndPoint_a9c99d24a44f871ce8a69b5220e381855}
+
+
+Definition at line 18 of file Socket\+End\+Point.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!accept\+Request@{accept\+Request}}
+\index{accept\+Request@{accept\+Request}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{accept\+Request()=0}{acceptRequest()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ipc\+::\+Socket\+End\+Point\+::accept\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_ab025dab15878d325d0932f0b813e31f4}{}\label{classipc_1_1SocketEndPoint_ab025dab15878d325d0932f0b813e31f4}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_a381d1f377da1a980bddfde2abb577bf0}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_ab025dab15878d325d0932f0b813e31f4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!bind\+Socket@{bind\+Socket}}
+\index{bind\+Socket@{bind\+Socket}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{bind\+Socket()=0}{bindSocket()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ipc\+::\+Socket\+End\+Point\+::bind\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a6de9aa716acefb344ddc566df4c1628d}{}\label{classipc_1_1SocketEndPoint_a6de9aa716acefb344ddc566df4c1628d}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_a5dddd0aef5c2184843f573c19156ba37}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_a6de9aa716acefb344ddc566df4c1628d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!connect\+To\+Server@{connect\+To\+Server}}
+\index{connect\+To\+Server@{connect\+To\+Server}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{connect\+To\+Server()=0}{connectToServer()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ipc\+::\+Socket\+End\+Point\+::connect\+To\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a81b916a8e92b383afa9d0bb85a76e364}{}\label{classipc_1_1SocketEndPoint_a81b916a8e92b383afa9d0bb85a76e364}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_acaf4e80b5d2e0069c0347cb7ad69b279}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_a81b916a8e92b383afa9d0bb85a76e364_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!destroy@{destroy}}
+\index{destroy@{destroy}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{destroy()=0}{destroy()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ipc\+::\+Socket\+End\+Point\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a65dba66f56f769ae7b424cb40dd2cf5b}{}\label{classipc_1_1SocketEndPoint_a65dba66f56f769ae7b424cb40dd2cf5b}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_ae8e7915608903f74300a9f626bdb3d3f}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_a65dba66f56f769ae7b424cb40dd2cf5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!get\+Current\+State@{get\+Current\+State}}
+\index{get\+Current\+State@{get\+Current\+State}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{get\+Current\+State()=0}{getCurrentState()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ipc\+::\+Socket\+End\+Point\+::get\+Current\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a3c86a15ac04aa3fe9480b4f6c7b09ae3}{}\label{classipc_1_1SocketEndPoint_a3c86a15ac04aa3fe9480b4f6c7b09ae3}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_a7fc2dceda50345568051d849c1c396dd}{ipc\+::\+Unix\+Domain\+Socket}.
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!init\+Config\+Items@{init\+Config\+Items}}
+\index{init\+Config\+Items@{init\+Config\+Items}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{init\+Config\+Items(string sz\+File\+Name)}{initConfigItems(string szFileName)}}]{\setlength{\rightskip}{0pt plus 5cm}static void ipc\+::\+Socket\+End\+Point\+::init\+Config\+Items (
+\begin{DoxyParamCaption}
+\item[{string}]{sz\+File\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classipc_1_1SocketEndPoint_a637ace8f8872aa88463405ac95561578}{}\label{classipc_1_1SocketEndPoint_a637ace8f8872aa88463405ac95561578}
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!initialize\+Socket@{initialize\+Socket}}
+\index{initialize\+Socket@{initialize\+Socket}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{initialize\+Socket()=0}{initializeSocket()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ipc\+::\+Socket\+End\+Point\+::initialize\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a84ded69d1b4d517aaefceeee03fe0846}{}\label{classipc_1_1SocketEndPoint_a84ded69d1b4d517aaefceeee03fe0846}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_ae1d8cecdd27269a77969b128e2f70774}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_a84ded69d1b4d517aaefceeee03fe0846_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!listen\+Socket@{listen\+Socket}}
+\index{listen\+Socket@{listen\+Socket}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{listen\+Socket()=0}{listenSocket()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ipc\+::\+Socket\+End\+Point\+::listen\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_a4e1ada6c59c1fc4b8d2a75e5939f06e5}{}\label{classipc_1_1SocketEndPoint_a4e1ada6c59c1fc4b8d2a75e5939f06e5}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_a2887b754b2b26b7c4c947aa27a8a75c8}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_a4e1ada6c59c1fc4b8d2a75e5939f06e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{read\+Data()=0}{readData()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Emp\+Full\+Message$\ast$ ipc\+::\+Socket\+End\+Point\+::read\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_ac626b7166cdda6bc1434d897c335e6b8}{}\label{classipc_1_1SocketEndPoint_ac626b7166cdda6bc1434d897c335e6b8}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_a694233d63430495b4ecbc5c5b59c01e4}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_ac626b7166cdda6bc1434d897c335e6b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!set\+Non\+Blocking@{set\+Non\+Blocking}}
+\index{set\+Non\+Blocking@{set\+Non\+Blocking}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{set\+Non\+Blocking(int socket\+F\+D)=0}{setNonBlocking(int socketFD)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ipc\+::\+Socket\+End\+Point\+::set\+Non\+Blocking (
+\begin{DoxyParamCaption}
+\item[{int}]{socket\+FD}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_adacb2194fa63c2eff027c094b4958997}{}\label{classipc_1_1SocketEndPoint_adacb2194fa63c2eff027c094b4958997}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_abbb0ec8d20157b203eee0eabcda81ec9}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_adacb2194fa63c2eff027c094b4958997_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!ipc\+::\+Socket\+End\+Point@{ipc\+::\+Socket\+End\+Point}}
+\subsubsection[{\texorpdfstring{write\+Data(\+Emp\+Full\+Message $\ast$message)=0}{writeData(EmpFullMessage *message)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ipc\+::\+Socket\+End\+Point\+::write\+Data (
+\begin{DoxyParamCaption}
+\item[{Emp\+Full\+Message $\ast$}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classipc_1_1SocketEndPoint_ad487a279c5f3456e241a71f4b37173a1}{}\label{classipc_1_1SocketEndPoint_ad487a279c5f3456e241a71f4b37173a1}
+
+
+Implemented in \hyperlink{classipc_1_1UnixDomainSocket_aff0368529a5eebb701e4689213880a97}{ipc\+::\+Unix\+Domain\+Socket}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classipc_1_1SocketEndPoint_ad487a279c5f3456e241a71f4b37173a1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+O\+M\+M\+O\+N/\hyperlink{SocketEndPoint_8h}{Socket\+End\+Point.\+h}\item 
+C\+O\+M\+M\+O\+N/\hyperlink{SocketEndPoint_8cpp}{Socket\+End\+Point.\+cpp}\end{DoxyCompactItemize}

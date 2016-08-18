@@ -1,0 +1,4 @@
+<map id="ipc::EndPoint" name="ipc::EndPoint">
+<area shape="rect" id="node2" href="$classipc_1_1Fifo.html" title="ipc::Fifo" alt="" coords="5,80,75,107"/>
+<area shape="rect" id="node3" href="$classipc_1_1Pipe.html" title="ipc::Pipe" alt="" coords="99,80,172,107"/>
+</map>

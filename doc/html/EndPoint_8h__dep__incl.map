@@ -1,0 +1,12 @@
+<map id="COMMON/EndPoint.h" name="COMMON/EndPoint.h">
+<area shape="rect" id="node2" href="$EndPoint_8cpp.html" title="COMMON/EndPoint.cpp" alt="" coords="5,80,171,107"/>
+<area shape="rect" id="node3" href="$EndPointFactory_8h.html" title="COMMON/EndPointFactory.h" alt="" coords="719,80,915,107"/>
+<area shape="rect" id="node6" href="$Pipe_8h.html" title="IPC_PIPE/Pipe.h" alt="" coords="195,80,319,107"/>
+<area shape="rect" id="node8" href="$Fifo_8h.html" title="IPC_FIFO/Fifo.h" alt="" coords="343,80,461,107"/>
+<area shape="rect" id="node10" href="$UnixDomainSocket_8h.html" title="IPC_UDS/UnixDomainSocket.h" alt="" coords="486,80,695,107"/>
+<area shape="rect" id="node4" href="$EndPointFactory_8cpp.html" title="COMMON/EndPointFactory.cpp" alt="" coords="391,155,601,181"/>
+<area shape="rect" id="node5" href="$TestIPCTechniques_8cpp.html" title="TEST/TestIPCTechniques.cpp" alt="" coords="873,155,1073,181"/>
+<area shape="rect" id="node7" href="$Pipe_8cpp.html" title="IPC_PIPE/Pipe.cpp" alt="" coords="71,155,209,181"/>
+<area shape="rect" id="node9" href="$Fifo_8cpp.html" title="IPC_FIFO/Fifo.cpp" alt="" coords="233,155,367,181"/>
+<area shape="rect" id="node11" href="$UnixDomainSocket_8cpp.html" title="IPC_UDS/UnixDomainSocket.cpp" alt="" coords="626,155,848,181"/>
+</map>

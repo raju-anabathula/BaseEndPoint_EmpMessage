@@ -1,0 +1,139 @@
+\hypertarget{Log_8h}{}\section{L\+O\+G/\+Log.h File Reference}
+\label{Log_8h}\index{L\+O\+G/\+Log.\+h@{L\+O\+G/\+Log.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for Log.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Log_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Log_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classutils_1_1Log}{utils\+::\+Log}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceutils}{utils}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Log_8h_a871f3a70864c5636a78620201dedd76b}{C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}(secs)~((secs) $\ast$ 1000)
+\begin{DoxyCompactList}\small\item\em Default config for surgical trace cfg. \end{DoxyCompactList}\item 
+\#define \hyperlink{Log_8h_a37612cd60a6e180c9a8c6b31ee2ce07f}{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS}(secs)~((secs) / 1000)
+\item 
+\#define \hyperlink{Log_8h_abfcb3531c4d1948301f4485ab72e55a7}{C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}(nano)~((nano) / 1000000);
+\item 
+\#define \hyperlink{Log_8h_afbdc5aaf2988e9ce63153c71a3b3d141}{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS}(nano)~((nano) $\ast$ 1000000);
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{Log_8h_a38748057dca6f4dde567ce318b0ea3d6}{M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH} = 256
+\item 
+const double \hyperlink{Log_8h_a752d63cc02c31f8e2ef0e8d8d7cd2d31}{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON} = 0.\+001
+\item 
+const double \hyperlink{Log_8h_ad06db1767964b0ed803524d37e6778a3}{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR} = 2.\+5
+\item 
+const std\+::string \hyperlink{Log_8h_a61ef7b3b99ed0b5533dfc31e496660e0}{S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG} = \char`\"{}Surgical\+Trace\+Idents\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Log.\+h@{Log.\+h}!C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS}}
+\index{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS}{CONVERT_MILLISECS_TO_NANOSECS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+N\+A\+N\+O\+S\+E\+CS(
+\begin{DoxyParamCaption}
+\item[{}]{nano}
+\end{DoxyParamCaption}
+)~((nano) $\ast$ 1000000);}\hypertarget{Log_8h_afbdc5aaf2988e9ce63153c71a3b3d141}{}\label{Log_8h_afbdc5aaf2988e9ce63153c71a3b3d141}
+
+
+Definition at line 37 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS}}
+\index{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS}{CONVERT_MILLISECS_TO_SECS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+V\+E\+R\+T\+\_\+\+M\+I\+L\+L\+I\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+S\+E\+CS(
+\begin{DoxyParamCaption}
+\item[{}]{secs}
+\end{DoxyParamCaption}
+)~((secs) / 1000)}\hypertarget{Log_8h_a37612cd60a6e180c9a8c6b31ee2ce07f}{}\label{Log_8h_a37612cd60a6e180c9a8c6b31ee2ce07f}
+
+
+Definition at line 34 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}}
+\index{C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}{CONVERT_NANOSECS_TO_MILLISECS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+V\+E\+R\+T\+\_\+\+N\+A\+N\+O\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS(
+\begin{DoxyParamCaption}
+\item[{}]{nano}
+\end{DoxyParamCaption}
+)~((nano) / 1000000);}\hypertarget{Log_8h_abfcb3531c4d1948301f4485ab72e55a7}{}\label{Log_8h_abfcb3531c4d1948301f4485ab72e55a7}
+
+
+Definition at line 36 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}}
+\index{C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS@{C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS}{CONVERT_SECS_TO_MILLISECS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+V\+E\+R\+T\+\_\+\+S\+E\+C\+S\+\_\+\+T\+O\+\_\+\+M\+I\+L\+L\+I\+S\+E\+CS(
+\begin{DoxyParamCaption}
+\item[{}]{secs}
+\end{DoxyParamCaption}
+)~((secs) $\ast$ 1000)}\hypertarget{Log_8h_a871f3a70864c5636a78620201dedd76b}{}\label{Log_8h_a871f3a70864c5636a78620201dedd76b}
+
+
+Default config for surgical trace cfg. 
+
+
+
+Definition at line 33 of file Log.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Log.\+h@{Log.\+h}!L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON@{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON}}
+\index{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON@{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON}{LOG_ELAPSE_EPSILON}}]{\setlength{\rightskip}{0pt plus 5cm}const double L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+P\+S\+I\+L\+ON = 0.\+001}\hypertarget{Log_8h_a752d63cc02c31f8e2ef0e8d8d7cd2d31}{}\label{Log_8h_a752d63cc02c31f8e2ef0e8d8d7cd2d31}
+
+
+Definition at line 29 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR@{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\index{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR@{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR}{LOG_ELAPSE_EXCESSIVE_FACTOR}}]{\setlength{\rightskip}{0pt plus 5cm}const double L\+O\+G\+\_\+\+E\+L\+A\+P\+S\+E\+\_\+\+E\+X\+C\+E\+S\+S\+I\+V\+E\+\_\+\+F\+A\+C\+T\+OR = 2.\+5}\hypertarget{Log_8h_ad06db1767964b0ed803524d37e6778a3}{}\label{Log_8h_ad06db1767964b0ed803524d37e6778a3}
+
+
+Definition at line 30 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH}{MAX_UTILS_LOG_FILE_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}const int M\+A\+X\+\_\+\+U\+T\+I\+L\+S\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+L\+E\+N\+G\+TH = 256}\hypertarget{Log_8h_a38748057dca6f4dde567ce318b0ea3d6}{}\label{Log_8h_a38748057dca6f4dde567ce318b0ea3d6}
+
+
+Definition at line 28 of file Log.\+h.
+
+\index{Log.\+h@{Log.\+h}!S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG@{S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG}}
+\index{S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG@{S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG}!Log.\+h@{Log.\+h}}
+\subsubsection[{\texorpdfstring{S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG}{SURGICAL_TRACE_CFG}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string S\+U\+R\+G\+I\+C\+A\+L\+\_\+\+T\+R\+A\+C\+E\+\_\+\+C\+FG = \char`\"{}Surgical\+Trace\+Idents\char`\"{}}\hypertarget{Log_8h_a61ef7b3b99ed0b5533dfc31e496660e0}{}\label{Log_8h_a61ef7b3b99ed0b5533dfc31e496660e0}
+
+
+Definition at line 31 of file Log.\+h.
+

@@ -1,0 +1,6 @@
+<map id="utils::Log::log" name="utils::Log::log">
+<area shape="rect" id="node2" href="$classutils_1_1Log.html#a37ae89eca0ad705c5e948710406e2054" title="utils::Log::trace" alt="" coords="155,5,267,32"/>
+<area shape="rect" id="node3" href="$classutils_1_1Log.html#acee86547a863c04b349ab46a3b7ba9f2" title="utils::Log::info" alt="" coords="159,56,263,83"/>
+<area shape="rect" id="node4" href="$classutils_1_1Log.html#aaff384f2d48d78b72b9c5e72ebed18db" title="utils::Log::warn" alt="" coords="155,107,266,133"/>
+<area shape="rect" id="node5" href="$classutils_1_1Log.html#a79149fab5ab512aef26dbebc45e936d1" title="utils::Log::error" alt="" coords="156,157,265,184"/>
+</map>

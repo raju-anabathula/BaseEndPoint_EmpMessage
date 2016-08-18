@@ -1,0 +1,321 @@
+\hypertarget{TestIPCTechniques_8cpp}{}\section{T\+E\+S\+T/\+Test\+I\+P\+C\+Techniques.cpp File Reference}
+\label{TestIPCTechniques_8cpp}\index{T\+E\+S\+T/\+Test\+I\+P\+C\+Techniques.\+cpp@{T\+E\+S\+T/\+Test\+I\+P\+C\+Techniques.\+cpp}}
+{\ttfamily \#include \char`\"{}C\+O\+M\+M\+O\+N/\+End\+Point\+Factory.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\+O\+G/\+Log.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+Y\+N\+\_\+\+C\+O\+N\+F\+I\+G/include/\+Configuration\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\\*
+Include dependency graph for Test\+I\+P\+C\+Techniques.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TestIPCTechniques_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{TestIPCTechniques_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\item 
+bool \hyperlink{TestIPCTechniques_8cpp_aefaa1acb486e7f286de1e1eef5d3be09}{compare\+Messages} (Emp\+Full\+Message $\ast$src\+Message, Emp\+Full\+Message $\ast$dest\+Message)
+\item 
+\hyperlink{TestIPCTechniques_8cpp_af032761b7ed565ba61b857f1d500fe99}{T\+E\+ST} (I\+P\+C\+Factory, uds)
+\item 
+\hyperlink{TestIPCTechniques_8cpp_a8b37dca848e1dbb1eed6cb0e125e3186}{T\+E\+ST} (I\+P\+C\+Factory, uds\+In\+While\+Loop)
+\item 
+\hyperlink{TestIPCTechniques_8cpp_a8ea67ea6c48aa73b3c86c9d3ad994d18}{T\+E\+ST} (I\+P\+C\+Factory, \hyperlink{classipc_1_1Pipe}{Pipe})
+\item 
+\hyperlink{TestIPCTechniques_8cpp_ab61cf1c085b52a827a55ea3a074916df}{T\+E\+ST} (I\+P\+C\+Factory, Named\+Pipe)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classipc_1_1EndPointFactory}{End\+Point\+Factory} $\ast$ \hyperlink{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}{factory} = End\+Point\+Factory\+::get\+End\+Point\+Factory()
+\item 
+\hyperlink{classipc_1_1EndPoint}{End\+Point} $\ast$ \hyperlink{TestIPCTechniques_8cpp_a70c952319117db004460fb429e820b46}{msg\+Queue} = \hyperlink{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}{factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+MQ)
+\item 
+\hyperlink{classipc_1_1EndPoint}{End\+Point} $\ast$ \hyperlink{TestIPCTechniques_8cpp_a18334ba08813c7e86729355ec4976521}{file\+Locking\+Read\+Test} = \hyperlink{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}{factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+FL)
+\item 
+\hyperlink{classipc_1_1EndPoint}{End\+Point} $\ast$ \hyperlink{TestIPCTechniques_8cpp_a5e53bd42f80bdb36a0f8b9ab3ee97d20}{file\+Locking\+Write\+Test} = \hyperlink{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}{factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+FL)
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a52f65e19060bd40b1481391dd52e6a36}{m\+\_\+protocol\+Version} = 2
+\item 
+const boost\+::uint16\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a17990f346798820912f1f770065436d8}{m\+\_\+message\+Type} = 1
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_afe7266181aa95c5dcdce09ab78253db2}{m\+\_\+message\+Version} = 3
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_abb1d9198cb0832355a20f555f55599c5}{m\+\_\+flags} = 9
+\item 
+const boost\+::uint32\+\_\+t \hyperlink{TestIPCTechniques_8cpp_ab2f29c9f8a088506e502cb052eb3958d}{m\+\_\+data\+Length} = 4
+\item 
+const boost\+::uint32\+\_\+t \hyperlink{TestIPCTechniques_8cpp_aaed93ba6a83c576e05e2d4c474b5bdcf}{m\+\_\+message\+Number} = 19
+\item 
+const boost\+::uint32\+\_\+t \hyperlink{TestIPCTechniques_8cpp_abe51e9b4a5ec52f00ad370c9e362e832}{m\+\_\+message\+Time} = 5000
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a497445d8dde07d63a98f3de839ef532d}{m\+\_\+var\+Header\+Size} = 32
+\item 
+const boost\+::uint16\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a02f6faa08b17968cd7d3d4feb2cb473f}{m\+\_\+ttl} = 99
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_ad2b615a6faa8d3c5e40c85012b40974c}{m\+\_\+qos\+Class} = 3
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a7d98911b644e04d37dc56de7da9ca359}{m\+\_\+qos\+Priority} = 2
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a4ef45bfc186886a30ba50caa8843300c}{m\+\_\+qos\+NP} = 1
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_ad636fe0c29e424b8ff6c602c7823d8d8}{m\+\_\+qos\+SH} = 9
+\item 
+const boost\+::uint8\+\_\+t \hyperlink{TestIPCTechniques_8cpp_a6693f63fa0f0e01a6120a4d797a4863f}{m\+\_\+qos\+Svc\+Req} = 7
+\item 
+const boost\+::uint16\+\_\+t \hyperlink{TestIPCTechniques_8cpp_aefa5de57a712adfdfd5dbf9e9b21f590}{m\+\_\+qos} = 0x\+F253
+\item 
+const string \hyperlink{TestIPCTechniques_8cpp_a2443556744d65840e43c3da835fdfd5b}{m\+\_\+source} = \char`\"{}S\+O\+U\+R\+C\+E.\+A\+D\+D\+R\+E\+SS\char`\"{}
+\item 
+const string \hyperlink{TestIPCTechniques_8cpp_ac3bf173d281be959d64c30e0464404f5}{m\+\_\+destination} = \char`\"{}D\+E\+S\+T.\+A\+D\+D\+R\+E\+SS\char`\"{}
+\item 
+const boost\+::uint32\+\_\+t \hyperlink{TestIPCTechniques_8cpp_ad70deab15b351dfbe42cd57afbd28248}{m\+\_\+data\+Integrity} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!compare\+Messages@{compare\+Messages}}
+\index{compare\+Messages@{compare\+Messages}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{compare\+Messages(\+Emp\+Full\+Message $\ast$src\+Message, Emp\+Full\+Message $\ast$dest\+Message)}{compareMessages(EmpFullMessage *srcMessage, EmpFullMessage *destMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\+Messages (
+\begin{DoxyParamCaption}
+\item[{Emp\+Full\+Message $\ast$}]{src\+Message, }
+\item[{Emp\+Full\+Message $\ast$}]{dest\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_aefaa1acb486e7f286de1e1eef5d3be09}{}\label{TestIPCTechniques_8cpp_aefaa1acb486e7f286de1e1eef5d3be09}
+
+
+Definition at line 59 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{TestIPCTechniques_8cpp_aefaa1acb486e7f286de1e1eef5d3be09_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!main@{main}}
+\index{main@{main}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{TestIPCTechniques_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 48 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+I\+P\+C\+Factory, uds)}{TEST(IPCFactory, uds)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{I\+P\+C\+Factory}]{, }
+\item[{uds}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_af032761b7ed565ba61b857f1d500fe99}{}\label{TestIPCTechniques_8cpp_af032761b7ed565ba61b857f1d500fe99}
+
+
+Definition at line 81 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+I\+P\+C\+Factory, uds\+In\+While\+Loop)}{TEST(IPCFactory, udsInWhileLoop)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{I\+P\+C\+Factory}]{, }
+\item[{uds\+In\+While\+Loop}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_a8b37dca848e1dbb1eed6cb0e125e3186}{}\label{TestIPCTechniques_8cpp_a8b37dca848e1dbb1eed6cb0e125e3186}
+
+
+Definition at line 164 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+I\+P\+C\+Factory, Pipe)}{TEST(IPCFactory, Pipe)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{I\+P\+C\+Factory}]{, }
+\item[{{\bf Pipe}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_a8ea67ea6c48aa73b3c86c9d3ad994d18}{}\label{TestIPCTechniques_8cpp_a8ea67ea6c48aa73b3c86c9d3ad994d18}
+
+
+Definition at line 294 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+I\+P\+C\+Factory, Named\+Pipe)}{TEST(IPCFactory, NamedPipe)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{I\+P\+C\+Factory}]{, }
+\item[{Named\+Pipe}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{TestIPCTechniques_8cpp_ab61cf1c085b52a827a55ea3a074916df}{}\label{TestIPCTechniques_8cpp_ab61cf1c085b52a827a55ea3a074916df}
+
+
+Definition at line 326 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!factory@{factory}}
+\index{factory@{factory}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{factory}{factory}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point\+Factory}$\ast$ factory = End\+Point\+Factory\+::get\+End\+Point\+Factory()}\hypertarget{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}{}\label{TestIPCTechniques_8cpp_a47c011ed6d922c521e3ee97b06c4dbf9}
+
+
+Definition at line 20 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!file\+Locking\+Read\+Test@{file\+Locking\+Read\+Test}}
+\index{file\+Locking\+Read\+Test@{file\+Locking\+Read\+Test}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{file\+Locking\+Read\+Test}{fileLockingReadTest}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point}$\ast$ file\+Locking\+Read\+Test = {\bf factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+FL)}\hypertarget{TestIPCTechniques_8cpp_a18334ba08813c7e86729355ec4976521}{}\label{TestIPCTechniques_8cpp_a18334ba08813c7e86729355ec4976521}
+
+
+Definition at line 22 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!file\+Locking\+Write\+Test@{file\+Locking\+Write\+Test}}
+\index{file\+Locking\+Write\+Test@{file\+Locking\+Write\+Test}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{file\+Locking\+Write\+Test}{fileLockingWriteTest}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point}$\ast$ file\+Locking\+Write\+Test = {\bf factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+FL)}\hypertarget{TestIPCTechniques_8cpp_a5e53bd42f80bdb36a0f8b9ab3ee97d20}{}\label{TestIPCTechniques_8cpp_a5e53bd42f80bdb36a0f8b9ab3ee97d20}
+
+
+Definition at line 23 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+data\+Integrity@{m\+\_\+data\+Integrity}}
+\index{m\+\_\+data\+Integrity@{m\+\_\+data\+Integrity}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+data\+Integrity}{m_dataIntegrity}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint32\+\_\+t m\+\_\+data\+Integrity = 0}\hypertarget{TestIPCTechniques_8cpp_ad70deab15b351dfbe42cd57afbd28248}{}\label{TestIPCTechniques_8cpp_ad70deab15b351dfbe42cd57afbd28248}
+
+
+Definition at line 46 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+data\+Length@{m\+\_\+data\+Length}}
+\index{m\+\_\+data\+Length@{m\+\_\+data\+Length}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+data\+Length}{m_dataLength}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint32\+\_\+t m\+\_\+data\+Length = 4}\hypertarget{TestIPCTechniques_8cpp_ab2f29c9f8a088506e502cb052eb3958d}{}\label{TestIPCTechniques_8cpp_ab2f29c9f8a088506e502cb052eb3958d}
+
+
+Definition at line 29 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+destination@{m\+\_\+destination}}
+\index{m\+\_\+destination@{m\+\_\+destination}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+destination}{m_destination}}]{\setlength{\rightskip}{0pt plus 5cm}const string m\+\_\+destination = \char`\"{}D\+E\+S\+T.\+A\+D\+D\+R\+E\+SS\char`\"{}}\hypertarget{TestIPCTechniques_8cpp_ac3bf173d281be959d64c30e0464404f5}{}\label{TestIPCTechniques_8cpp_ac3bf173d281be959d64c30e0464404f5}
+
+
+Definition at line 44 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+flags@{m\+\_\+flags}}
+\index{m\+\_\+flags@{m\+\_\+flags}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+flags}{m_flags}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+flags = 9}\hypertarget{TestIPCTechniques_8cpp_abb1d9198cb0832355a20f555f55599c5}{}\label{TestIPCTechniques_8cpp_abb1d9198cb0832355a20f555f55599c5}
+
+
+Definition at line 28 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+message\+Number@{m\+\_\+message\+Number}}
+\index{m\+\_\+message\+Number@{m\+\_\+message\+Number}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+message\+Number}{m_messageNumber}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint32\+\_\+t m\+\_\+message\+Number = 19}\hypertarget{TestIPCTechniques_8cpp_aaed93ba6a83c576e05e2d4c474b5bdcf}{}\label{TestIPCTechniques_8cpp_aaed93ba6a83c576e05e2d4c474b5bdcf}
+
+
+Definition at line 30 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+message\+Time@{m\+\_\+message\+Time}}
+\index{m\+\_\+message\+Time@{m\+\_\+message\+Time}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+message\+Time}{m_messageTime}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint32\+\_\+t m\+\_\+message\+Time = 5000}\hypertarget{TestIPCTechniques_8cpp_abe51e9b4a5ec52f00ad370c9e362e832}{}\label{TestIPCTechniques_8cpp_abe51e9b4a5ec52f00ad370c9e362e832}
+
+
+Definition at line 31 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+message\+Type@{m\+\_\+message\+Type}}
+\index{m\+\_\+message\+Type@{m\+\_\+message\+Type}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+message\+Type}{m_messageType}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint16\+\_\+t m\+\_\+message\+Type = 1}\hypertarget{TestIPCTechniques_8cpp_a17990f346798820912f1f770065436d8}{}\label{TestIPCTechniques_8cpp_a17990f346798820912f1f770065436d8}
+
+
+Definition at line 26 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+message\+Version@{m\+\_\+message\+Version}}
+\index{m\+\_\+message\+Version@{m\+\_\+message\+Version}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+message\+Version}{m_messageVersion}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+message\+Version = 3}\hypertarget{TestIPCTechniques_8cpp_afe7266181aa95c5dcdce09ab78253db2}{}\label{TestIPCTechniques_8cpp_afe7266181aa95c5dcdce09ab78253db2}
+
+
+Definition at line 27 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+protocol\+Version@{m\+\_\+protocol\+Version}}
+\index{m\+\_\+protocol\+Version@{m\+\_\+protocol\+Version}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+protocol\+Version}{m_protocolVersion}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+protocol\+Version = 2}\hypertarget{TestIPCTechniques_8cpp_a52f65e19060bd40b1481391dd52e6a36}{}\label{TestIPCTechniques_8cpp_a52f65e19060bd40b1481391dd52e6a36}
+
+
+Definition at line 25 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos@{m\+\_\+qos}}
+\index{m\+\_\+qos@{m\+\_\+qos}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos}{m_qos}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint16\+\_\+t m\+\_\+qos = 0x\+F253}\hypertarget{TestIPCTechniques_8cpp_aefa5de57a712adfdfd5dbf9e9b21f590}{}\label{TestIPCTechniques_8cpp_aefa5de57a712adfdfd5dbf9e9b21f590}
+
+
+Definition at line 41 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos\+Class@{m\+\_\+qos\+Class}}
+\index{m\+\_\+qos\+Class@{m\+\_\+qos\+Class}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos\+Class}{m_qosClass}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+qos\+Class = 3}\hypertarget{TestIPCTechniques_8cpp_ad2b615a6faa8d3c5e40c85012b40974c}{}\label{TestIPCTechniques_8cpp_ad2b615a6faa8d3c5e40c85012b40974c}
+
+
+Definition at line 35 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos\+NP@{m\+\_\+qos\+NP}}
+\index{m\+\_\+qos\+NP@{m\+\_\+qos\+NP}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos\+NP}{m_qosNP}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+qos\+NP = 1}\hypertarget{TestIPCTechniques_8cpp_a4ef45bfc186886a30ba50caa8843300c}{}\label{TestIPCTechniques_8cpp_a4ef45bfc186886a30ba50caa8843300c}
+
+
+Definition at line 37 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos\+Priority@{m\+\_\+qos\+Priority}}
+\index{m\+\_\+qos\+Priority@{m\+\_\+qos\+Priority}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos\+Priority}{m_qosPriority}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+qos\+Priority = 2}\hypertarget{TestIPCTechniques_8cpp_a7d98911b644e04d37dc56de7da9ca359}{}\label{TestIPCTechniques_8cpp_a7d98911b644e04d37dc56de7da9ca359}
+
+
+Definition at line 36 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos\+SH@{m\+\_\+qos\+SH}}
+\index{m\+\_\+qos\+SH@{m\+\_\+qos\+SH}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos\+SH}{m_qosSH}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+qos\+SH = 9}\hypertarget{TestIPCTechniques_8cpp_ad636fe0c29e424b8ff6c602c7823d8d8}{}\label{TestIPCTechniques_8cpp_ad636fe0c29e424b8ff6c602c7823d8d8}
+
+
+Definition at line 38 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+qos\+Svc\+Req@{m\+\_\+qos\+Svc\+Req}}
+\index{m\+\_\+qos\+Svc\+Req@{m\+\_\+qos\+Svc\+Req}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+qos\+Svc\+Req}{m_qosSvcReq}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+qos\+Svc\+Req = 7}\hypertarget{TestIPCTechniques_8cpp_a6693f63fa0f0e01a6120a4d797a4863f}{}\label{TestIPCTechniques_8cpp_a6693f63fa0f0e01a6120a4d797a4863f}
+
+
+Definition at line 39 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+source@{m\+\_\+source}}
+\index{m\+\_\+source@{m\+\_\+source}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+source}{m_source}}]{\setlength{\rightskip}{0pt plus 5cm}const string m\+\_\+source = \char`\"{}S\+O\+U\+R\+C\+E.\+A\+D\+D\+R\+E\+SS\char`\"{}}\hypertarget{TestIPCTechniques_8cpp_a2443556744d65840e43c3da835fdfd5b}{}\label{TestIPCTechniques_8cpp_a2443556744d65840e43c3da835fdfd5b}
+
+
+Definition at line 43 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+ttl@{m\+\_\+ttl}}
+\index{m\+\_\+ttl@{m\+\_\+ttl}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+ttl}{m_ttl}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint16\+\_\+t m\+\_\+ttl = 99}\hypertarget{TestIPCTechniques_8cpp_a02f6faa08b17968cd7d3d4feb2cb473f}{}\label{TestIPCTechniques_8cpp_a02f6faa08b17968cd7d3d4feb2cb473f}
+
+
+Definition at line 33 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!m\+\_\+var\+Header\+Size@{m\+\_\+var\+Header\+Size}}
+\index{m\+\_\+var\+Header\+Size@{m\+\_\+var\+Header\+Size}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{m\+\_\+var\+Header\+Size}{m_varHeaderSize}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::uint8\+\_\+t m\+\_\+var\+Header\+Size = 32}\hypertarget{TestIPCTechniques_8cpp_a497445d8dde07d63a98f3de839ef532d}{}\label{TestIPCTechniques_8cpp_a497445d8dde07d63a98f3de839ef532d}
+
+
+Definition at line 32 of file Test\+I\+P\+C\+Techniques.\+cpp.
+
+\index{Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}!msg\+Queue@{msg\+Queue}}
+\index{msg\+Queue@{msg\+Queue}!Test\+I\+P\+C\+Techniques.\+cpp@{Test\+I\+P\+C\+Techniques.\+cpp}}
+\subsubsection[{\texorpdfstring{msg\+Queue}{msgQueue}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\+Point}$\ast$ msg\+Queue = {\bf factory}-\/$>$create\+End\+Point\+Instance(End\+Point\+Factory\+::\+I\+P\+C\+\_\+\+MQ)}\hypertarget{TestIPCTechniques_8cpp_a70c952319117db004460fb429e820b46}{}\label{TestIPCTechniques_8cpp_a70c952319117db004460fb429e820b46}
+
+
+Definition at line 21 of file Test\+I\+P\+C\+Techniques.\+cpp.
+

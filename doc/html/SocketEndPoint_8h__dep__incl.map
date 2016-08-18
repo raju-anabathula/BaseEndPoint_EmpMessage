@@ -1,0 +1,8 @@
+<map id="COMMON/SocketEndPoint.h" name="COMMON/SocketEndPoint.h">
+<area shape="rect" id="node2" href="$EndPointFactory_8h.html" title="COMMON/EndPointFactory.h" alt="" coords="125,80,320,107"/>
+<area shape="rect" id="node5" href="$UnixDomainSocket_8h.html" title="IPC_UDS/UnixDomainSocket.h" alt="" coords="345,80,553,107"/>
+<area shape="rect" id="node7" href="$SocketEndPoint_8cpp.html" title="COMMON/SocketEndPoint.cpp" alt="" coords="578,80,784,107"/>
+<area shape="rect" id="node3" href="$EndPointFactory_8cpp.html" title="COMMON/EndPointFactory.cpp" alt="" coords="231,155,441,181"/>
+<area shape="rect" id="node4" href="$TestIPCTechniques_8cpp.html" title="TEST/TestIPCTechniques.cpp" alt="" coords="5,155,205,181"/>
+<area shape="rect" id="node6" href="$UnixDomainSocket_8cpp.html" title="IPC_UDS/UnixDomainSocket.cpp" alt="" coords="466,155,688,181"/>
+</map>
